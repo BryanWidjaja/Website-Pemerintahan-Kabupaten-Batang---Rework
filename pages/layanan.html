@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Pemerintahan Kabupaten Batang</title>
-    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./assets/styles/master.css" />
-    <link rel="stylesheet" href="./assets/styles/animations.css" />
-    <link rel="stylesheet" href="./assets/styles/hero.css" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/styles/master.css" />
+    <link rel="stylesheet" href="../assets/styles/animations.css" />
+    <link rel="stylesheet" href="../assets/styles/hero.css" />
+    <link rel="stylesheet" href="../assets/styles/layanan.css" />
   </head>
   <body>
-    <section class="hero landing">
+    <section class="hero">
       <div class="darken-overlay"></div>
       <div class="navbar">
         <div class="navbar-container">
-          <img
-            src="./assets/images/logo.png"
-            alt="BatangKab"
-            class="nav-logo"
-          />
+          <a href="../index.html"
+            ><img
+              src="../assets/images/logo.png"
+              alt="BatangKab"
+              class="nav-logo"
+            />
+          </a>
+
           <div class="nav-mid">
             <p class="nav-dropdown">Mengenai Batang</p>
             <p class="nav-dropdown">Pemerintahan</p>
             <p class="nav-dropdown">Informasi</p>
-            <a href="./pages/layanan.html" class="nav-link">Layanan</a>
+            <a href="../pages/layanan.html" class="nav-link">Layanan</a>
           </div>
           <div class="search-bar">
             <input
@@ -34,27 +37,17 @@
               class="search-input"
             />
             <img
-              src="./assets/icons/search.svg"
+              src="../assets/icons/search.svg"
               alt="searchicon"
               class="search-btn"
             />
           </div>
         </div>
       </div>
-
-      <div class="landing-main"></div>
-
-      <div class="landing-bottom">
-        <img
-          src="./assets/icons/down_arrow.svg"
-          alt="downarrow"
-          class="down-arrow"
-        />
-      </div>
     </section>
 
     <section class="main"> </section>
 
-    <script src="./components/navbar.js"></script>
+    <script src="../components/navbar.js"></script>
   </body>
 </html>

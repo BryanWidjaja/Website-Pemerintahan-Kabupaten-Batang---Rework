@@ -25,23 +25,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-beige: #f8f9ef;
+  --main-lime: #90c67c;
+  --main-melon: #67ae6e;
+  --main-emerald: #328e6e;
+  --main-lightgray: #999999;
+  --main-charcoal: #212629;
+}
+
 body {
   font-family: "Poppins", serif;
   transition: all 0.5s;
-  background-color: var(--main-beige);
-}
-
-html {
-  scroll-snap-type: y proximity;
-  scroll-behavior: smooth;
-}
-
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  background-color: white;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -49,6 +49,25 @@ a:hover {
   cursor: pointer;
 }
 
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .display-none {
   display: none !important;
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(135deg, var(--main-lime), var(--main-emerald));
+}
+
+.darken-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 68, 48, 0.25);
+  z-index: 1;
 }

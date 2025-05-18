@@ -1,0 +1,27 @@
+.hero {
+  height: 100vh;
+}
+
+.landing-main {
+  padding-top: 12.5vh;
+  height: 85%;
+}
+
+.landing-bottom {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.down-arrow {
+  height: 30%;
+  object-fit: contain;
+  animation: bounce 1.5s ease-in-out infinite;
+  z-index: 20;
+}
+
+.main {
+  height: 200vh;
+}
