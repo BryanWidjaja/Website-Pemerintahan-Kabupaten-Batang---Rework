@@ -2,26 +2,161 @@
   height: 100vh;
 }
 
-.landing-main {
+.hero-bottom {
   padding-top: 12.5vh;
   height: 85%;
-}
-
-.landing-bottom {
-  height: 15%;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
 .down-arrow {
-  height: 30%;
+  height: 2.5rem;
   object-fit: contain;
   animation: bounce 1.5s ease-in-out infinite;
-  z-index: 20;
+  z-index: 15;
 }
 
 .main {
-  height: 200vh;
+  /* height: 200vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main-sections {
+  padding: 7.5vh 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-header {
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.section-header-title {
+  padding-left: 2.5%;
+}
+
+.section-header-title:hover strong {
+  color: var(--main-melon);
+}
+
+.hover-reveal {
+  font-size: 0.85rem;
+  display: none;
+  color: white;
+  background: var(--primary-gradient);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.section-header-title:hover ~ .hover-reveal {
+  display: flex;
+}
+
+.main-sections-container {
+  width: 95%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fd-r {
+  flex-direction: row;
+}
+
+.berita-img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  border: 0.01rem solid var(--main-lightgray);
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.berita-pemerintahan-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.berita-pemerintahan-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.berita-pemerintahan-text {
+  color: var(--main-darkgray);
+  width: 90%;
+}
+
+.berita-pemerintahan-link {
+  color: var(--main-melon);
+}
+
+.triangle-link-container {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.triangle-link-icon {
+  width: auto;
+  object-fit: cover;
+  padding-top: 0.4rem;
+}
+
+.small-triangle {
+  height: 1rem;
+}
+
+.big-triangle {
+  padding-bottom: 0.3rem;
+  height: 1.75rem;
+}
+
+.berita-foto-row {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.berita-foto-container {
+  width: 31.5%;
+}
+
+.berita-foto-link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.berita-foto-link img {
+  width: 100%;
+  height: 90%;
+  border-radius: 0.5rem;
+  border: 0.01rem solid var(--main-lightgray);
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.berita-foto-link:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }

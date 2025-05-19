@@ -1,5 +1,12 @@
 @font-face {
   font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
   src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -19,6 +26,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +40,17 @@
 }
 
 :root {
-  --main-beige: #f8f9ef;
   --main-lime: #90c67c;
   --main-melon: #67ae6e;
   --main-emerald: #328e6e;
+  --primary-gradient: linear-gradient(
+    135deg,
+    var(--main-lime),
+    var(--main-emerald)
+  );
+  --main-offwhite: #f8f9ef;
   --main-lightgray: #999999;
+  --main-darkgray: #384340;
   --main-charcoal: #212629;
 }
 
@@ -38,6 +58,7 @@ body {
   font-family: "Poppins", serif;
   transition: all 0.5s;
   background-color: white;
+  color: var(--main-charcoal);
 }
 
 a {
@@ -59,7 +80,7 @@ input {
 }
 
 .bg-primary-gradient {
-  background: linear-gradient(135deg, var(--main-lime), var(--main-emerald));
+  background: var(--primary-gradient);
 }
 
 .darken-overlay {
@@ -70,4 +91,10 @@ input {
   width: 100%;
   background-color: rgba(40, 68, 48, 0.25);
   z-index: 1;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--main-lightgray);
 }

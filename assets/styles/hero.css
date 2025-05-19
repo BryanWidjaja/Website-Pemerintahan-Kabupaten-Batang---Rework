@@ -3,6 +3,18 @@
   background-image: url("../images/hero.jpg");
   background-size: cover;
   position: relative;
+  color: white;
+  text-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.3);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(73, 73, 73, 0.5) 70%, white);
+  z-index: 2;
 }
 
 .navbar {
@@ -12,11 +24,9 @@
   width: 100%;
   height: 12.5vh;
   padding: 1.5rem 4rem;
-  z-index: 15;
+  z-index: 30;
   transition: all 0.3s ease;
-  color: white;
   font-size: 1.15rem;
-  text-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.3);
 }
 
 .navbar-container {
@@ -67,4 +77,30 @@
 
 .search-btn:hover {
   cursor: pointer;
+}
+
+.hero-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-main p {
+  z-index: 20;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-desc {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
