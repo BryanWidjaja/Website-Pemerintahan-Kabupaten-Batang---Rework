@@ -50,7 +50,8 @@
     var(--main-emerald)
   );
 
-  --main-offwhite: #f8f9ef;
+  --main-white: #ffffff;
+  --main-offwhite: #fcfbf8;
   --main-lightgray: #999999;
   --main-darkgray: #384340;
   --main-charcoal: #212629;
@@ -65,7 +66,7 @@
 body {
   font-family: "Poppins", serif;
   transition: all 0.5s;
-  background-color: white;
+  background-color: var(--main-white);
   color: var(--main-charcoal);
 }
 

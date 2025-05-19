@@ -3,7 +3,7 @@
   background-image: url("../images/hero.jpg");
   background-size: cover;
   position: relative;
-  color: white;
+  color: var(--main-white);
   text-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.3);
 }
 
@@ -13,7 +13,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(180deg, rgba(73, 73, 73, 0.5) 70%, white);
+  background: linear-gradient(180deg, rgba(73, 73, 73, 0.5) 70%, var(--main-white));
   z-index: 2;
 }
 
@@ -99,7 +99,7 @@
   width: fit-content;
   white-space: nowrap;
   transform: translateX(-50%);
-  background-color: white;
+  background-color: var(--main-white);
   color: var(--main-charcoal);
   box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
   padding: 0.5rem 0.75rem;
@@ -129,7 +129,7 @@
 .search-bar {
   width: 20%;
   display: flex;
-  background-color: white;
+  background-color: var(--main-white);
   border: 0.1rem solid var(--main-lightgray);
   border-radius: 1.5rem;
   padding: 0.35rem 1rem;
@@ -147,7 +147,7 @@
   height: 1.5rem;
   width: auto;
   object-fit: cover;
-  color: white;
+  color: var(--main-white);
 }
 
 .search-btn:hover {

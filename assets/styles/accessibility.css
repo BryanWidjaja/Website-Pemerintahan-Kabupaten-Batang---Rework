@@ -1,0 +1,87 @@
+.accessibility {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+#accessability-btn {
+  height: 3.5rem;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.3));
+  margin: 2rem;
+}
+
+#accessability-btn:hover {
+  cursor: pointer;
+}
+
+.accessibility-menu {
+  display: none;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+  z-index: 200;
+  background-color: var(--main-offwhite);
+  padding: 1.5rem;
+  gap: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  align-items: center;
+  position: relative;
+}
+
+.accessibility-menu.visible {
+  display: flex;
+}
+
+.acc-menu-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.acc-row {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.acc-card {
+  background-color: var(--main-white);
+  width: 30%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.acc-card img {
+  height: 3.5rem;
+}
+
+.acc-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#acc-close-btn {
+  position: absolute;
+  height: 1.5rem;
+  top: 0;
+  right: 0;
+  margin: 1.5rem;
+}
+
+#acc-close-btn:hover {
+  cursor: pointer;
+}
