@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Pemerintahan Kabupaten Batang</title>
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/styles/master.css" />
+    <link rel="stylesheet" href="../assets/styles/animations.css" />
+    <link rel="stylesheet" href="../assets/styles/hero.css" />
+    <link rel="stylesheet" href="../assets/styles/berita.css" />
+  </head>
+  <body>
+    <section class="hero landing">
+      <div class="navbar">
+        <div class="navbar-container bg-primary-gradient">
+          <img
+            src="../assets/images/logo.png"
+            alt="BatangKab"
+            class="nav-logo"
+          />
+          <div class="nav-mid">
+            <div class="nav-dropdown-container">
+              <div class="nav-dropdown nav-item">
+                Mengenai Batang
+                <img src="../assets/icons/triangle-down.svg" alt="V" />
+              </div>
+              <div class="dropdown-buffer"></div>
+              <div class="dropdown-menu">
+                <a href="./pages/struktur.html">Struktur Organisasi</a>
+                <div class="horizontal-line thin"></div>
+                <a href="./pages/visi-misi.html">Visi & Misi</a>
+                <div class="horizontal-line thin"></div>
+                <a href="./pages/bupati.html">Bupati & Wakil</a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown nav-item">Pemerintahan</div>
+            <div class="nav-dropdown nav-item">Informasi</div>
+            <a href="./pages/layanan.html" class="nav-link nav-item">Layanan</a>
+          </div>
+          <div class="search-bar">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Cari"
+              class="search-input"
+            />
+            <img
+              src="../assets/icons/search.svg"
+              alt="searchicon"
+              class="search-btn"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div id="article-detail"></div>
+    </section>
+    <script src="../components/loadNews.js"></script>
+  </body>
+</html>

@@ -22,10 +22,24 @@
             class="nav-logo"
           />
           <div class="nav-mid">
-            <p class="nav-dropdown">Mengenai Batang</p>
-            <p class="nav-dropdown">Pemerintahan</p>
-            <p class="nav-dropdown">Informasi</p>
-            <a href="./pages/layanan.html" class="nav-link">Layanan</a>
+            <div class="nav-dropdown-container">
+              <div class="nav-dropdown nav-item">
+                Mengenai Batang
+                <img src="./assets/icons/triangle-down.svg" alt="V" />
+              </div>
+              <div class="dropdown-buffer"></div>
+              <div class="dropdown-menu">
+                <a href="./pages/struktur.html">Struktur Organisasi</a>
+                <div class="horizontal-line thin"></div>
+                <a href="./pages/visi-misi.html">Visi & Misi</a>
+                <div class="horizontal-line thin"></div>
+                <a href="./pages/bupati.html">Bupati & Wakil</a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown nav-item">Pemerintahan</div>
+            <div class="nav-dropdown nav-item">Informasi</div>
+            <a href="./pages/layanan.html" class="nav-link nav-item">Layanan</a>
           </div>
           <div class="search-bar">
             <input
@@ -76,7 +90,7 @@
 
         <div class="main-sections-container fd-r">
           <img
-            src="./assets/images/berita/utama.jpeg"
+            src="./assets/images/berita/2025-05-15-1.jpg"
             alt="berita-pemerintahan"
             class="berita-img"
           />
@@ -121,7 +135,9 @@
           <div class="horizontal-line bg-primary-gradient"></div>
         </div>
 
-        <div class="main-sections-container"></div>
+        <div class="main-sections-container">
+          <div class="berita-container-row" id="terbaru-row"> </div>
+        </div>
       </div>
 
       <div class="main-sections">
@@ -197,7 +213,49 @@
           <div class="horizontal-line bg-primary-gradient"></div>
         </div>
 
-        <div class="main-sections-container"></div>
+        <div class="main-sections-container">
+          <div class="berita-foto-row">
+            <div class="berita-foto-container">
+              <a href="" class="berita-foto-link">
+                <img src="./assets/images/berita/b_foto_1.jpg" alt="1" />
+                Tandatangan Pakta Integritas
+              </a>
+            </div>
+            <div class="berita-foto-container">
+              <a href="" class="berita-foto-link">
+                <img src="./assets/images/berita/b_foto_2.jpg" alt="2" />
+                Pelantikan 1.516 PPPK
+              </a>
+            </div>
+            <div class="berita-foto-container">
+              <a href="" class="berita-foto-link">
+                <img src="./assets/images/berita/b_foto_3.jpg" alt="3" />
+                Penghargaan PNS Berprestasi
+              </a>
+            </div>
+          </div>
+
+          <div class="berita-foto-row">
+            <div class="berita-foto-container">
+              <a href="" class="berita-foto-link">
+                <img src="./assets/images/berita/b_foto_4.jpg" alt="4" />
+                Sumpah Janji Pimpinan DPRD Batang
+              </a>
+            </div>
+            <div class="berita-foto-container">
+              <a href="" class="berita-foto-link">
+                <img src="./assets/images/berita/b_foto_5.jpg" alt="5" />
+                Tandatangan Pakta Integritas
+              </a>
+            </div>
+            <div class="berita-foto-container">
+              <a href="" class="berita-foto-link">
+                <img src="./assets/images/berita/b_foto_6.jpg" alt="6" />
+                Bacaan Pakta Integritas
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="main-sections">
@@ -220,5 +278,6 @@
       </div>
     </section>
     <script src="./components/navbar.js"></script>
+    <script src="./components/news.js"></script>
   </body>
 </html>

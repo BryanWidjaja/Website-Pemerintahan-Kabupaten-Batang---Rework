@@ -98,3 +98,7 @@ input {
   height: 0.1rem;
   background-color: var(--main-lightgray);
 }
+
+.thin {
+  height: 0.05rem;
+}
