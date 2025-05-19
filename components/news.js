@@ -1,5 +1,10 @@
+const basePath =
+  window.location.hostname === "bryanwidjaja.github.io"
+    ? "/YOUR-REPO-NAME"
+    : "";
+
 const renderNews = (newsRowID, category = null) => {
-  fetch("../assets/json/news.json")
+  fetch(`${basePath}/assets/json/news.json`)
     .then((res) => res.json())
     .then((data) => {
       const categories = data.categories;
