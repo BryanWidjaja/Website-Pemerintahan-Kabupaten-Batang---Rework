@@ -19,7 +19,7 @@
 }
 
 .main {
-  padding: 7.5vh 0;
+  padding: 15vh 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -74,9 +74,7 @@
   align-items: center;
 }
 
-.fd-r {
-  flex-direction: row;
-}
+
 
 .berita-img {
   border-radius: 0.5rem;

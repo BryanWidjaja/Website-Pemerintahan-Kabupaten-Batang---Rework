@@ -43,15 +43,23 @@
   --main-lime: #90c67c;
   --main-melon: #67ae6e;
   --main-emerald: #328e6e;
+
   --primary-gradient: linear-gradient(
     135deg,
     var(--main-lime),
     var(--main-emerald)
   );
+
   --main-offwhite: #f8f9ef;
   --main-lightgray: #999999;
   --main-darkgray: #384340;
   --main-charcoal: #212629;
+
+  --darkgray-gradient: linear-gradient(
+    135deg,
+    var(--main-darkgray),
+    var(--main-charcoal)
+  );
 }
 
 body {
@@ -59,6 +67,10 @@ body {
   transition: all 0.5s;
   background-color: white;
   color: var(--main-charcoal);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -81,6 +93,10 @@ input {
 
 .bg-primary-gradient {
   background: var(--primary-gradient);
+}
+
+.bg-darkgray-gradient {
+  background: var(--darkgray-gradient);
 }
 
 .darken-overlay {
@@ -107,4 +123,12 @@ input {
 
 .thin {
   height: 0.05rem;
+}
+
+.fd-r {
+  flex-direction: row !important;
+}
+
+.jc-c {
+  justify-content: center !important;
 }
