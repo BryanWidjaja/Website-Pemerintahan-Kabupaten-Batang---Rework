@@ -1,6 +1,6 @@
 const basePath =
   window.location.hostname === "bryanwidjaja.github.io"
-    ? "/YOUR-REPO-NAME"
+    ? "/Website-Pemerintahan-Kabupaten-Batang---Rework"
     : "";
 
 const renderNews = (newsRowID, category = null) => {
