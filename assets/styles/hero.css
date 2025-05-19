@@ -69,8 +69,16 @@
   background-color: rgba(255, 254, 249, 0.15);
 }
 
-.nav-dropdown img {
+.dropdown-arrow {
   height: 1rem;
+  width: 1rem;
+  background-image: url("../icons/triangle-down.svg");
+  background-size: cover;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover .dropdown-arrow {
+  background-image: url("../icons/triangle-up.svg");
 }
 
 .dropdown-buffer {

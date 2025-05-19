@@ -99,6 +99,12 @@ input {
   background-color: var(--main-lightgray);
 }
 
+.vertical-line {
+  height: 100%;
+  width: 0.1rem;
+  background-color: var(--main-lightgray);
+}
+
 .thin {
   height: 0.05rem;
 }
