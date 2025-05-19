@@ -1,16 +1,17 @@
 .accessibility {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: 95%;
+  left: 95%;
+  width: 5%;
+  height: 5%;
   position: fixed;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  z-index: 100;
+  z-index: 50;
 }
 
 #accessability-btn {
+  position: relative;
   height: 3.5rem;
   filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.3));
   margin: 2rem;
@@ -23,9 +24,9 @@
 .accessibility-menu {
   display: none;
   flex-direction: column;
-  width: 35%;
-  height: 100%;
-  z-index: 200;
+  width: 50vw;
+  height: 100vh;
+  z-index: 200 !important;
   background-color: var(--main-offwhite);
   padding: 1.5rem;
   gap: 1rem;
