@@ -100,8 +100,8 @@ input {
 }
 
 .vertical-line {
-  height: 100%;
-  width: 0.1rem;
+  height: auto;
+  width: 0.05rem;
   background-color: var(--main-lightgray);
 }
 
