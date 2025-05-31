@@ -33,6 +33,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("../fonts/opendyslexic/OpenDyslexic-Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("../fonts/opendyslexic/OpenDyslexic-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -97,9 +111,14 @@ a:hover {
   cursor: pointer;
 }
 
-input {
+input,
+button {
   font-family: inherit;
   font-size: inherit;
+}
+
+button {
+  color: inherit;
 }
 
 .display-none {
