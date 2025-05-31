@@ -52,7 +52,7 @@ const renderNews = (newsColumnID, category = null) => {
             )}" class="berita-title">${article.title}</a>
             
             <div class="berita-info-container">
-                <img src="../assets/icons/date.svg" alt="date : " class="berita-info-icon" />
+                <img src="../assets/icons/date.svg" alt="date : " class="berita-info-icon invert-icons" />
                 <p class="berita-date">${article.date}</p>
             </div>
         </div>

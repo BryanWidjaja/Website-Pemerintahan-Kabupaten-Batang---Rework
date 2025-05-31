@@ -50,17 +50,31 @@
     var(--main-emerald)
   );
 
+  --darkgray-gradient: linear-gradient(135deg, #3d403c, #242924);
+}
+
+[data-theme="light"] {
   --main-white: #ffffff;
   --main-offwhite: #fefefc;
   --main-lightgray: #999999;
-  --main-darkgray: #384340;
-  --main-charcoal: #212629;
+  --main-darkgray: #3d403c;
+  --main-charcoal: #242924;
+  --black-15: rgba(0, 0, 0, 0.15);
+  --black-30: rgba(0, 0, 0, 0.3);
+}
 
-  --darkgray-gradient: linear-gradient(
-    135deg,
-    var(--main-darkgray),
-    var(--main-charcoal)
-  );
+[data-theme="dark"] {
+  --main-white: #2f302e;
+  --main-offwhite: #3f413f;
+  --main-lightgray: #90968f;
+  --main-darkgray: #d6dcd4;
+  --main-charcoal: #f4f9f3;
+  --black-15: rgba(128, 128, 128, 0.15);
+  --black-30: rgba(128, 128, 128, 0.3);
+}
+
+[data-theme="dark"] .invert-icons {
+  filter: brightness(0) invert(1);
 }
 
 body {

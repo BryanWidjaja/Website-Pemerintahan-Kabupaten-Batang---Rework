@@ -9,7 +9,7 @@ const saturationBtn = document.getElementById("saturation-btn");
 const disleksiaBtn = document.getElementById("disleksia-btn");
 const sundaBtn = document.getElementById("sunda-btn");
 
-const listenBtn = (btn) => {
+const listenMenuBtn = (btn) => {
   btn.addEventListener("click", () => {
     const isMenuVisible = accessibilityMenu.classList.toggle("visible");
 
@@ -18,9 +18,6 @@ const listenBtn = (btn) => {
       : accessibilityBtn.classList.remove("display-none");
   });
 };
-
-listenBtn(accessibilityBtn);
-listenBtn(closeBtn);
 
 const listenBtnToFunction = (btn, func) => {
   btn.addEventListener("click", () => {
@@ -44,4 +41,18 @@ const increaseTextSize = () => {
   });
 };
 
+let currThemeSetting = localStorage.getItem("theme") || "dark";
+document.querySelector("html").setAttribute("data-theme", currThemeSetting);
+
+const changeTheme = () => {
+  const newTheme = currThemeSetting === "dark" ? "light" : "dark";
+  document.querySelector("html").setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+  currThemeSetting = newTheme;
+};
+
+listenMenuBtn(accessibilityBtn);
+listenMenuBtn(closeBtn);
+
+listenBtnToFunction(darkmodeBtn, changeTheme);
 listenBtnToFunction(bigtextBtn, increaseTextSize);

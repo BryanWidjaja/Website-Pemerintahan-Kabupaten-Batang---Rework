@@ -38,7 +38,7 @@
   object-fit: cover;
   border-radius: 0.5rem;
   border: 0.01rem solid var(--main-lightgray);
-  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0.75rem var(--black-15);
 }
 
 .main-berita-title {
@@ -99,7 +99,7 @@
   object-fit: cover;
   border-radius: 0.5rem;
   border: 0.01rem solid var(--main-lightgray);
-  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0.75rem var(--black-15);
 }
 
 .berita-text-container {

@@ -53,15 +53,15 @@ const renderNews = (newsRowID, category = null, inPages = false) => {
         )}" class="berita-title">${article.title}</a>
           <div class="berita-info-row">
             <div class="berita-info-container">
-              <img src="${pathStart}assets/icons/date.svg" alt="date : " class="berita-info-icon" />
+              <img src="${pathStart}assets/icons/date.svg" alt="date : " class="berita-info-icon invert-icons" />
               <p class="berita-date">${article.date}</p>
             </div>
             <div class="berita-info-container">
-              <img src="${pathStart}assets/icons/user.svg" alt="writer : " class="berita-info-icon" />
+              <img src="${pathStart}assets/icons/user.svg" alt="writer : " class="berita-info-icon invert-icons" />
               <p class="berita-writer">${article.writer}</p>
             </div>
             <div class="berita-info-container">
-              <img src="${pathStart}assets/icons/tag.svg" alt="category : " class="berita-info-icon" />
+              <img src="${pathStart}assets/icons/tag.svg" alt="category : " class="berita-info-icon invert-icons" />
               <a href="${pagesLink}berita-list.html" class="berita-category">${
           article.category
         }</a>
@@ -76,5 +76,3 @@ const renderNews = (newsRowID, category = null, inPages = false) => {
     })
     .catch((error) => console.error("Fetch error:", error));
 };
-
-
