@@ -13,40 +13,41 @@
     <link rel="stylesheet" href="../assets/styles/layanan.css" />
   </head>
   <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <a href="../index.html"
+          ><img
+            src="../assets/images/logo.png"
+            alt="BatangKab"
+            class="nav-logo"
+          />
+        </a>
+
+        <div class="nav-mid">
+          <p class="nav-dropdown">Mengenai Batang</p>
+          <p class="nav-dropdown">Pemerintahan</p>
+          <p class="nav-dropdown">Informasi</p>
+          <a href="../pages/layanan.html" class="nav-link">Layanan</a>
+        </div>
+        <div class="search-bar">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Cari"
+            class="search-input"
+          />
+          <img
+            src="../assets/icons/search.svg"
+            alt="searchicon"
+            class="search-btn"
+          />
+        </div>
+      </div>
+    </div>
+
     <section class="hero">
       <div class="hero-overlay"></div>
       <div class="darken-overlay"></div>
-      <div class="navbar">
-        <div class="navbar-container">
-          <a href="../index.html"
-            ><img
-              src="../assets/images/logo.png"
-              alt="BatangKab"
-              class="nav-logo"
-            />
-          </a>
-
-          <div class="nav-mid">
-            <p class="nav-dropdown">Mengenai Batang</p>
-            <p class="nav-dropdown">Pemerintahan</p>
-            <p class="nav-dropdown">Informasi</p>
-            <a href="../pages/layanan.html" class="nav-link">Layanan</a>
-          </div>
-          <div class="search-bar">
-            <input
-              type="search"
-              id="search-input"
-              placeholder="Cari"
-              class="search-input"
-            />
-            <img
-              src="../assets/icons/search.svg"
-              alt="searchicon"
-              class="search-btn"
-            />
-          </div>
-        </div>
-      </div>
 
       <div class="hero-main">
         <p class="hero-title">Layanan Kami</p>
@@ -80,47 +81,101 @@
       >
     </section>
 
-    <div class="accessibility">
-      <div class="acc-img-container">
-        <img
-          src="../assets/icons/accessability.png"
-          alt="accessability"
-          id="accessability-btn"
-        />
-      </div>
+    <div class="accessibility-btn">
+      <img
+        src="../assets/icons/accessability.png"
+        alt="accessability"
+        id="accessability-btn"
+      />
+    </div>
 
-      <div class="accessibility-menu">
-        <img src="../assets/icons/close.svg" alt="X" id="acc-close-btn" />
-        <p class="acc-menu-title">Menu Aksesibilitas</p>
-        <div class="horizontal-line"></div>
-        <div class="acc-row">
-          <div class="acc-card" id="darkmode-btn">
-            <img src="../assets/icons/darkmode.svg" alt="darkmode" />
-            Mode Gelap
-          </div>
-          <div class="acc-card" id="smalltext-btn">
-            <img src="../assets/icons/darkmode.svg" alt="darkmode" />
-            Perkecil Teks
-          </div>
-          <div class="acc-card" id="bigtext-btn">
-            <img src="../assets/icons/darkmode.svg" alt="darkmode" />
-            Perbesar Teks
+    <div class="accessibility-menu">
+      <img
+        src="../assets/icons/close.svg"
+        alt="X"
+        id="acc-close-btn"
+        class="invert-icons"
+      />
+      <p class="acc-menu-title">Menu Aksesibilitas</p>
+      <div class="horizontal-line"></div>
+      <div class="acc-row">
+        <div class="acc-card" id="darkmode-btn">
+          <img
+            src="../assets/icons/darkmode.svg"
+            alt="darkmode"
+            class="invert-icons"
+          />
+          Mode Gelap
+        </div>
+        <div class="acc-card" id="saturation-btn">
+          <img
+            src="../assets/icons/saturation.svg"
+            alt="saturation"
+            class="invert-icons"
+          />
+          Kejenuhan
+          <div class="steps-container" id="saturation-steps">
+            <div class="steps"></div>
+            <div class="steps"></div>
+            <div class="steps"></div>
           </div>
         </div>
-        <div class="acc-row">
-          <div class="acc-card" id="saturation-btn">
-            <img src="../assets/icons/darkmode.svg" alt="darkmode" />
-            Kejenuhan
-          </div>
-          <div class="acc-card" id="disleksia-btn">
-            <img src="../assets/icons/darkmode.svg" alt="darkmode" />
-            Ramah Disleksia
-          </div>
-          <div class="acc-card" id="sunda-btn">
-            <img src=".../assets/icons/darkmode.svg" alt="darkmode" />
-            Bahasa Sunda
+      </div>
+      <div class="acc-row">
+        <div class="acc-card" id="smalltext-btn">
+          <img
+            src="../assets/icons/shrink.svg"
+            alt="shrink"
+            class="invert-icons slight-big"
+          />
+          Perkecil Teks
+          <div class="steps-container" id="smalltext-steps">
+            <div class="steps"></div>
+            <div class="steps"></div>
+            <div class="steps"></div>
           </div>
         </div>
+        <div class="acc-card" id="bigtext-btn">
+          <img
+            src="../assets/icons/enlarge.svg"
+            alt="enlarge"
+            class="invert-icons slight-big"
+          />
+          Perbesar Teks
+          <div class="steps-container" id="bigtext-steps">
+            <div class="steps"></div>
+            <div class="steps"></div>
+            <div class="steps"></div>
+          </div>
+        </div>
+      </div>
+      <div class="acc-row">
+        <div class="acc-card" id="disleksia-btn">
+          <img
+            src="../assets/icons/dyslexic.svg"
+            alt="dyslexic"
+            class="invert-icons slight-small"
+          />
+          Ramah Disleksia
+        </div>
+        <div class="acc-card" id="jawa-btn">
+          <img
+            src="../assets/icons/translatejawa.svg"
+            alt="translatejawa"
+            class="invert-icons"
+          />
+          Bahasa Jawa
+        </div>
+      </div>
+      <div class="reset-btn-container">
+        <button class="reset-btn" id="reset-btn">
+          <img
+            src="../assets/icons/reset.svg"
+            alt="reset"
+            class="invert-icons"
+          />
+          Atur Ulang Semua
+        </button>
       </div>
     </div>
 
