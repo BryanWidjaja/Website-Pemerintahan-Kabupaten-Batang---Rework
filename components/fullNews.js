@@ -2,8 +2,11 @@ const params = new URLSearchParams(window.location.search);
 const title = params.get("title");
 
 const renderMainNews = (containerClass, javanese = false) => {
+  const cacheBuster = new Date().getTime();
   fetch(
-    javanese ? `../assets/json/news_Javanese.json` : `../assets/json/news.json`
+    javanese
+      ? `../assets/json/news_Javanese.json?cb=${cacheBuster}`
+      : `../assets/json/news.json?cb=${cacheBuster}`
   )
     .then((res) => res.json())
     .then((data) => {
@@ -59,4 +62,4 @@ const renderMainNews = (containerClass, javanese = false) => {
     });
 };
 
-renderMainNews("main-berita-container");
+renderMainNews("main-berita-container", javaneseActive);

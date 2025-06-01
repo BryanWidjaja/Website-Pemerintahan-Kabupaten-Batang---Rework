@@ -1,4 +1,4 @@
-renderNews("terbaru-row", null, true);
+renderNews("terbaru-row", null, true, javaneseActive);
 
 const renderAllNews = () => {
   fetch(`${basePath}/assets/json/news.json`)
@@ -23,7 +23,12 @@ const renderAllNews = () => {
 
         parent.appendChild(container);
 
-        renderNews(`${category.toLowerCase()}-row`, `${category}`, true);
+        renderNews(
+          `${category.toLowerCase()}-row`,
+          `${category}`,
+          true,
+          javaneseActive
+        );
       });
     })
     .catch((error) => console.error("Fetch error:", error));

@@ -7,8 +7,17 @@ const smalltextBtn = document.getElementById("smalltext-btn");
 const bigtextBtn = document.getElementById("bigtext-btn");
 const saturationBtn = document.getElementById("saturation-btn");
 const disleksiaBtn = document.getElementById("disleksia-btn");
-const sundaBtn = document.getElementById("sunda-btn");
+const jawaBtn = document.getElementById("jawa-btn");
 const resetBtn = document.getElementById("reset-btn");
+
+const allBtns = [
+  darkmodeBtn,
+  smalltextBtn,
+  bigtextBtn,
+  saturationBtn,
+  disleksiaBtn,
+  jawaBtn,
+];
 
 const smallTextSteps = document.querySelectorAll("#smalltext-steps .steps");
 const bigTextSteps = document.querySelectorAll("#bigtext-steps .steps");
@@ -31,6 +40,12 @@ const SATURATION_KEY = "saturationStep";
 const mainWrapper = document.querySelector(".main");
 const heroWrapper = document.querySelector(".hero");
 
+const stepButtonsMap = new Map([
+  [smalltextBtn, "smallTextStep"],
+  [bigtextBtn, "bigTextStep"],
+  [saturationBtn, SATURATION_KEY],
+]);
+
 const listenMenuBtn = (btn) => {
   btn.addEventListener("click", () => {
     const isMenuVisible = accessibilityMenu.classList.toggle("visible");
@@ -45,6 +60,22 @@ const listenBtnToFunction = (btn, func) => {
   btn.addEventListener("click", () => {
     func();
   });
+};
+
+const toggleActiveClass = (btn) => {
+  btn.classList.toggle("active");
+};
+
+const resetActiveClass = (btn) => {
+  btn.classList.remove("active");
+};
+
+const updateButtonActiveState = (btn) => {
+  const key = stepButtonsMap.get(btn);
+  if (!key) return;
+  const step = stepCounters.get(key) || 0;
+  if (step > 0) btn.classList.add("active");
+  else btn.classList.remove("active");
 };
 
 const changeTheme = () => {
@@ -103,40 +134,48 @@ const resetSteps = (steps) => {
   });
 };
 
-const incrementStep = (key, steps, incrementSize) => {
-  if (!stepCounters.has(key)) stepCounters.set(key, 0);
+const incrementStep = (keyParam, steps, incrementSize) => {
+  if (!stepCounters.has(keyParam)) stepCounters.set(keyParam, 0);
 
-  let currentStep = stepCounters.get(key);
+  let currentStep = stepCounters.get(keyParam);
 
   if (currentStep >= MAX_STEPS) {
     steps.forEach((step) => step.classList.remove("active"));
-    stepCounters.set(key, 0);
-    localStorage.setItem(key, 0);
+    stepCounters.set(keyParam, 0);
+    localStorage.setItem(keyParam, 0);
 
-    if (key === "bigTextStep" || key === "smallTextStep") {
+    if (keyParam === "bigTextStep" || keyParam === "smallTextStep") {
       fontScale = 1.0;
       localStorage.setItem("fontScale", fontScale);
       document.documentElement.style.fontSize = `${fontScale}rem`;
     }
 
-    if (key === SATURATION_KEY) {
+    if (keyParam === SATURATION_KEY) {
       resetAllFilters();
     }
+
+    stepButtonsMap.forEach((key, btn) => {
+      if (key === keyParam) updateButtonActiveState(btn);
+    });
 
     return;
   }
 
   steps[currentStep].classList.add("active");
-  stepCounters.set(key, currentStep + 1);
-  localStorage.setItem(key, currentStep + 1);
+  stepCounters.set(keyParam, currentStep + 1);
+  localStorage.setItem(keyParam, currentStep + 1);
 
-  if (key === "bigTextStep") {
+  if (keyParam === "bigTextStep") {
     changeFontSize(true);
-  } else if (key === "smallTextStep") {
+  } else if (keyParam === "smallTextStep") {
     changeFontSize(false);
-  } else if (key === SATURATION_KEY) {
+  } else if (keyParam === SATURATION_KEY) {
     applyAllSaturation(currentStep + 1);
   }
+
+  stepButtonsMap.forEach((key, btn) => {
+    if (key === keyParam) updateButtonActiveState(btn);
+  });
 };
 
 const changeFontSize = (increment) => {
@@ -186,7 +225,6 @@ const changeDyslexic = () => {
     const step = 0.1;
     const baseRem = 1;
 
-    // Decrease font scale only if above min
     if (fontScale > 0.6) {
       fontScale -= step;
       fontScale = parseFloat(fontScale.toFixed(2));
@@ -204,14 +242,41 @@ const changeDyslexic = () => {
   }
 };
 
+const changeJavanese = () => {
+  javaneseActive = !javaneseActive;
+  localStorage.setItem("javaneseActive", javaneseActive);
+  location.reload();
+};
+
+const clearAllLocalStorageKeys = () => {
+  localStorage.removeItem("darkmodeActive");
+  localStorage.removeItem("disleksiaActive");
+  localStorage.removeItem("jawaActive");
+  localStorage.removeItem("javaneseActive");
+
+  localStorage.removeItem("smallTextStep");
+  localStorage.removeItem("bigTextStep");
+  localStorage.removeItem(SATURATION_KEY);
+
+  localStorage.removeItem("theme");
+  localStorage.removeItem("font");
+  localStorage.removeItem("fontScale");
+};
+
 const resetAllSettings = () => {
+  clearAllLocalStorageKeys();
+  location.reload();
+
+  allBtns.forEach((btn) => {
+    resetActiveClass(btn);
+  });
+
   currThemeSetting = "light";
   document.querySelector("html").setAttribute("data-theme", currThemeSetting);
   localStorage.setItem("theme", currThemeSetting);
 
   currFontSetting = "Poppins";
   document.body.style.fontFamily = currFontSetting;
-  document.body.style.letterSpacing = "";
   localStorage.setItem("font", currFontSetting);
 
   fontScale = 1.0;
@@ -220,21 +285,60 @@ const resetAllSettings = () => {
 
   stepCounters.set("smallTextStep", 0);
   stepCounters.set("bigTextStep", 0);
-  localStorage.setItem("smallTextStep", 0);
-  localStorage.setItem("bigTextStep", 0);
+  stepCounters.set(SATURATION_KEY, 0);
+
+  javaneseActive = false;
+
   resetSteps(smallTextSteps);
   resetSteps(bigTextSteps);
-
-  stepCounters.set(SATURATION_KEY, 0);
-  localStorage.setItem(SATURATION_KEY, 0);
   resetSteps(saturationSteps);
   resetAllFilters();
+};
+
+const restoreButtonActiveStates = () => {
+  const buttonsWithStorageKeys = [
+    { btn: darkmodeBtn, key: "darkmodeActive" },
+    { btn: disleksiaBtn, key: "disleksiaActive" },
+    { btn: jawaBtn, key: "jawaActive" },
+  ];
+
+  buttonsWithStorageKeys.forEach(({ btn, key }) => {
+    const savedState = localStorage.getItem(key);
+    if (savedState === "true") {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  stepButtonsMap.forEach((key, btn) => {
+    updateButtonActiveState(btn);
+  });
+};
+
+const restoreStepButtonsActiveState = () => {
+  stepButtonsMap.forEach((storageKey, btn) => {
+    const step = stepCounters.get(storageKey) || 0;
+
+    if (step > 0) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
 };
 
 listenMenuBtn(accessibilityBtn);
 listenMenuBtn(closeBtn);
 
-listenBtnToFunction(darkmodeBtn, changeTheme);
+listenBtnToFunction(darkmodeBtn, () => {
+  changeTheme();
+  toggleActiveClass(darkmodeBtn);
+  localStorage.setItem(
+    "darkmodeActive",
+    darkmodeBtn.classList.contains("active")
+  );
+});
 
 initSaturationSteps();
 listenBtnToFunction(saturationBtn, () =>
@@ -247,6 +351,22 @@ listenBtnToFunction(smalltextBtn, decreaseTextSize);
 listenBtnToFunction(bigtextBtn, increaseTextSize);
 document.documentElement.style.fontSize = `${fontScale}rem`;
 
-listenBtnToFunction(disleksiaBtn, changeDyslexic);
+listenBtnToFunction(disleksiaBtn, () => {
+  changeDyslexic();
+  toggleActiveClass(disleksiaBtn);
+  localStorage.setItem(
+    "disleksiaActive",
+    disleksiaBtn.classList.contains("active")
+  );
+});
+
+listenBtnToFunction(jawaBtn, () => {
+  changeJavanese();
+  toggleActiveClass(jawaBtn);
+  localStorage.setItem("jawaActive", jawaBtn.classList.contains("active"));
+});
 
 listenBtnToFunction(resetBtn, resetAllSettings);
+
+restoreStepButtonsActiveState();
+restoreButtonActiveStates();

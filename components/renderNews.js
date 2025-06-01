@@ -9,10 +9,11 @@ const renderNews = (
   inPages = false,
   javanese = false
 ) => {
+  const cacheBuster = new Date().getTime();
   fetch(
     javanese
-      ? `${basePath}/assets/json/news_Javanese.json`
-      : `${basePath}/assets/json/news.json`
+      ? `${basePath}/assets/json/news_Javanese.json?cb=${cacheBuster}`
+      : `${basePath}/assets/json/news.json?cb=${cacheBuster}`
   )
     .then((res) => res.json())
     .then((data) => {

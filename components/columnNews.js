@@ -3,8 +3,13 @@ const basePath =
     ? "/Website-Pemerintahan-Kabupaten-Batang---Rework"
     : "";
 
-const renderNews = (newsColumnID, category = null) => {
-  fetch(`${basePath}/assets/json/news.json`)
+const renderNews = (newsColumnID, category = null, javanese = false) => {
+  const cacheBuster = new Date().getTime();
+  fetch(
+    javanese
+      ? `${basePath}/assets/json/news_Javanese.json?cb=${cacheBuster}`
+      : `${basePath}/assets/json/news.json?cb=${cacheBuster}`
+  )
     .then((res) => res.json())
     .then((data) => {
       const categories = data.categories;
@@ -64,4 +69,4 @@ const renderNews = (newsColumnID, category = null) => {
     .catch((error) => console.error("Fetch error:", error));
 };
 
-renderNews("berita-lainnya");
+renderNews("berita-lainnya", javaneseActive);

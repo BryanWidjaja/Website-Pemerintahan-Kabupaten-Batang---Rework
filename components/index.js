@@ -1,1 +1,1 @@
-renderNews("terbaru-row");
+renderNews("terbaru-row", null, false, javaneseActive);

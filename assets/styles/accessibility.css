@@ -72,6 +72,10 @@
   -webkit-user-select: none;
 }
 
+.acc-card.active {
+  border: 0.25rem solid var(--main-melon);
+}
+
 .acc-card img {
   height: 4.25rem;
 }
