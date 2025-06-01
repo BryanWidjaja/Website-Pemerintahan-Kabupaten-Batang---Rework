@@ -1,8 +1,10 @@
 const params = new URLSearchParams(window.location.search);
 const title = params.get("title");
 
-const renderMainNews = (containerClass) => {
-  fetch("../assets/json/news.json")
+const renderMainNews = (containerClass, javanese = false) => {
+  fetch(
+    javanese ? `../assets/json/news_Javanese.json` : `../assets/json/news.json`
+  )
     .then((res) => res.json())
     .then((data) => {
       const allArticles = [];
@@ -38,9 +40,9 @@ const renderMainNews = (containerClass) => {
         </div>
         <div class="main-berita-info-container">
           <img src="../assets/icons/tag.svg" alt="category : " class="main-berita-info-icon invert-icons" />
-          <a href="./berita-list.html" class="main-berita-category">${
+          <a href="./berita-list.html#${
             article.category
-          }</a>
+          }" class="main-berita-category">${article.category}</a>
         </div>
       </div>
       <img src="../assets/images/berita/${

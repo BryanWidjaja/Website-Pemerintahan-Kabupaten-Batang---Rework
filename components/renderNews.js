@@ -3,8 +3,17 @@ const basePath =
     ? "/Website-Pemerintahan-Kabupaten-Batang---Rework"
     : "";
 
-const renderNews = (newsRowID, category = null, inPages = false) => {
-  fetch(`${basePath}/assets/json/news.json`)
+const renderNews = (
+  newsRowID,
+  category = null,
+  inPages = false,
+  javanese = false
+) => {
+  fetch(
+    javanese
+      ? `${basePath}/assets/json/news_Javanese.json`
+      : `${basePath}/assets/json/news.json`
+  )
     .then((res) => res.json())
     .then((data) => {
       const categories = data.categories;
@@ -62,9 +71,9 @@ const renderNews = (newsRowID, category = null, inPages = false) => {
             </div>
             <div class="berita-info-container">
               <img src="${pathStart}assets/icons/tag.svg" alt="category : " class="berita-info-icon invert-icons" />
-              <a href="${pagesLink}berita-list.html" class="berita-category">${
+              <a href="${pagesLink}berita-list.html#${
           article.category
-        }</a>
+        }" class="berita-category">${article.category}</a>
             </div>
           </div>
           <div class="horizontal-line"></div>

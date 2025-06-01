@@ -9,6 +9,7 @@ const renderAllNews = () => {
       Object.keys(categories).forEach((category) => {
         const container = document.createElement("div");
         container.classList.add("main-sections");
+        container.id = `${category}`;
         container.innerHTML = `
           <div class="section-header">
             <p class="section-header-title">Berita <strong>${category}</strong></p>
