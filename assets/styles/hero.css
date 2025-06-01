@@ -155,7 +155,8 @@
   color: var(--main-white);
 }
 
-.search-btn:hover {
+.search-btn:hover,
+.navbar-drop-sidebar-head:hover {
   cursor: pointer;
 }
 
@@ -183,4 +184,56 @@
 .hero-desc {
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.navbar-drop-sidebar-container {
+  position: relative;
+}
+
+.navbar-drop-sidebar-head {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.navbar-drop-sidebar-head img {
+  margin-top: 0.2rem;
+  height: 1rem;
+}
+
+.navbar-drop-sidebar {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: calc(100% + 1.25rem);
+  top: 0;
+  width: fit-content;
+  white-space: nowrap;
+  background-color: var(--main-white);
+  color: var(--main-charcoal);
+  box-shadow: 0 0 0.75rem var(--black-15);
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  gap: 0.25rem;
+  transition: all 0.3s ease;
+  text-shadow: none;
+}
+
+.dropdown-buffer-vertical {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 2.5rem;
+  height: 100%;
+  pointer-events: auto;
+}
+
+.navbar-drop-sidebar-head:has(.navbar-drop-sidebar:hover) .nav-dropdown {
+  background-color: rgba(255, 254, 249, 0.15);
+}
+
+.navbar-drop-sidebar:hover,
+.navbar-drop-sidebar-container:hover .navbar-drop-sidebar {
+  display: flex;
 }

@@ -56,7 +56,7 @@
 .hover-reveal {
   font-size: 0.85rem;
   display: none;
-  color: var(--main-white);
+  color: white;
   background: var(--primary-gradient);
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
