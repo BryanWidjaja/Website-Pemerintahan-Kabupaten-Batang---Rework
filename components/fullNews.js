@@ -1,13 +1,20 @@
 const params = new URLSearchParams(window.location.search);
-const title = params.get("title");
+let title = params.get("title") || "";
+let photoActive = false;
 
-const renderMainNews = (containerClass, javanese = false) => {
+if (title.endsWith("-photo")) {
+  photoActive = true;
+  title = title.slice(0, -6);
+}
+
+const renderMainNews = (containerClass, javanese = false, photo = false) => {
   const cacheBuster = new Date().getTime();
-  fetch(
-    javanese
-      ? `../assets/json/news_Javanese.json?cb=${cacheBuster}`
-      : `../assets/json/news.json?cb=${cacheBuster}`
-  )
+  let url = "../assets/json/news.json";
+
+  if (javanese) url = "../assets/json/news_Javanese.json";
+  else if (photo) url = "../assets/json/news_Photos.json";
+
+  fetch(`${url}?cb=${cacheBuster}`)
     .then((res) => res.json())
     .then((data) => {
       const allArticles = [];
@@ -62,4 +69,4 @@ const renderMainNews = (containerClass, javanese = false) => {
     });
 };
 
-renderMainNews("main-berita-container", javaneseActive);
+renderMainNews("main-berita-container", javaneseActive, photoActive);
