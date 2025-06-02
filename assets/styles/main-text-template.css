@@ -113,3 +113,20 @@
   margin-bottom: 0.5rem;
   padding-left: 0.25rem;
 }
+
+.lambang-list {
+  /* margin: 1rem 0; */
+  padding-left: 1rem;
+  line-height: 1.6;
+}
+
+.lambang-list li {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  text-align: justify;
+}
+
+.lambang-list li strong {
+  font-weight: 700;
+  color: #333;
+}
