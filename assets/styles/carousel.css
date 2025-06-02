@@ -19,7 +19,7 @@
 
     position: relative;
     width: var(--carousel-width);
-    height: calc(var(--carousel-item-height) + 1rem);
+    height: calc(var(--carousel-item-height) + 2rem);
 
     overflow: visible;
 
@@ -50,6 +50,10 @@
     }
   }
 
+  .carousel.dragging {
+    cursor: grabbing;
+  }
+
   .carousel > .carousel-item {
     position: absolute;
     top: 0.5rem;
@@ -68,6 +72,7 @@
     );
     border-radius: 0.5rem;
     box-shadow: 0 0 0.75rem var(--black-15);
+    transition: all 0.3s ease;
   }
 
   .carousel > .carousel-item:is(:nth-child(1)) {
@@ -100,6 +105,11 @@
     height: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
+  }
+
+  .carousel-item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
   }
 
   @keyframes marquee {
