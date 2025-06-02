@@ -320,27 +320,31 @@
             </div>
 
             <div class="form-element-container">
-              <label for="age-input" class="form-label">Nomor telepon</label>
-              <input
-                type="number"
-                id="age-input"
-                name="age-input"
-                placeholder="Masukkan nomor telepon anda"
-                class="form-input"
-              />
-              <div class="errormsg" id="age-error"></div>
+              <label for="problem-input" class="form-label">Permasalahan</label>
+              <textarea
+                id="problem-input"
+                name="problem-input"
+                placeholder="Apa permasalahannya"
+                class="form-textarea"
+              ></textarea>
+              <div class="errormsg" id="problem-error"></div>
             </div>
 
             <div class="form-element-container">
-              <label for="age-input" class="form-label">Nomor telepon</label>
-              <input
-                type="number"
-                id="age-input"
-                name="age-input"
-                placeholder="Masukkan nomor telepon anda"
-                class="form-input"
-              />
-              <div class="errormsg" id="age-error"></div>
+              <label for="evidence-input" class="form-label">Bukti</label>
+              <div class="file-input-container">
+                <input
+                  type="file"
+                  id="evidence-input"
+                  name="evidence-input"
+                  accept="image/*,video/*,.pdf,.doc,.docx"
+                />
+                <div class="file-input-content">
+                  <span class="file-input-text" id="file-input-text">Masukkan bukti yang anda miliki</span>
+                  <img src="../assets/icons/paperclip.svg" alt="attachment" class="attachment-icon" />
+                </div>
+              </div>
+              <div class="errormsg" id="evidence-error"></div>
             </div>
 
             <button type="submit" class="form-btn">Lapor</button>

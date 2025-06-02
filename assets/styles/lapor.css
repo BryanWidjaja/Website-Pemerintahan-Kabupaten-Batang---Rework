@@ -144,3 +144,65 @@
 .gap-2rem {
   gap: 2rem;
 }
+
+.form-textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--main-lightgray);
+  transition: all 0.3s ease;
+  font-family: inherit;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-textarea:focus {
+  border-color: var(--main-melon);
+  outline: none;
+}
+
+.file-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--main-lightgray);
+  transition: all 0.3s ease;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.file-input-container:hover {
+  border-color: var(--main-melon);
+}
+
+.file-input-container input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file-input-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  pointer-events: none;
+}
+
+.file-input-text {
+  color: #999;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.attachment-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.6;
+  flex-shrink: 0;
+}

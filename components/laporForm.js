@@ -7,6 +7,9 @@ const ageInput = document.getElementById("age-input");
 const interestsInput = document.querySelectorAll("#interests-input");
 const termsInput = document.getElementById("terms-input");
 const privacyInput = document.getElementById("privacy-input");
+const problemInput = document.getElementById("problem-input");
+const evidenceInput = document.getElementById("evidence-input");
+const fileInputText = document.getElementById("file-input-text");
 
 const nameError = document.getElementById("name-error");
 const emailError = document.getElementById("email-error");
@@ -15,9 +18,22 @@ const ageError = document.getElementById("age-error");
 const interestsError = document.getElementById("interests-error");
 const termsError = document.getElementById("terms-error");
 const privacyError = document.getElementById("privacy-error");
+const problemError = document.getElementById("problem-error");
+const evidenceError = document.getElementById("evidence-error");
+
+evidenceInput.addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  if (file) {
+    fileInputText.textContent = file.name;
+    fileInputText.style.color = '#333';
+  } else {
+    fileInputText.textContent = 'Masukkan bukti yang anda miliki';
+    fileInputText.style.color = '#999';
+  }
+});
 
 laporForm.addEventListener("submit", function (e) {
-  e.preventDefault();
+  e.preventDefault();   
 
   let valid = true;
 
@@ -46,6 +62,11 @@ laporForm.addEventListener("submit", function (e) {
 
   if (!interestChecked) {
     displayErrorMsg(interestsError, "Please select at least one interest");
+    valid = false;
+  }
+
+  if (!problemInput.value.trim()) {
+    displayErrorMsg(problemError, "Silakan masukkan permasalahan!");
     valid = false;
   }
 
@@ -90,4 +111,6 @@ const resetAllErrorMsg = () => {
   interestsError.textContent = "";
   termsError.textContent = "";
   privacyError.textContent = "";
+  problemError.textContent = "";
+  evidenceError.textContent = "";
 };
