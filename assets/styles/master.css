@@ -172,3 +172,7 @@ button {
 .tdu:hover {
   text-decoration: underline;
 }
+
+.ai-s {
+  align-items: stretch !important;
+}

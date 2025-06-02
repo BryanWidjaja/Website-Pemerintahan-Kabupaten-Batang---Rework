@@ -224,3 +224,37 @@
   font-size: 1rem;
   color: var(--main-darkgray);
 }
+
+.main-info-container {
+  font-size: 1.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background-color: var(--main-offwhite);
+  box-shadow: 0 0 0.75rem var(--black-15);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.main-info-header {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.info-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-info-content-nameimg-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.info-content-container img {
+  height: 1.5rem;
+}
