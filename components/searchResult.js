@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(`.${parentClass}`);
 
     if (newsCount === 0 && downloadsCount === 0) {
+      emptyResult.classList.remove("hidden");
       emptyResult.innerHTML = `Hasil pencarian <strong>${query}</strong> tidak ditemukan.`;
     } else {
       const info = document.createElement("p");
