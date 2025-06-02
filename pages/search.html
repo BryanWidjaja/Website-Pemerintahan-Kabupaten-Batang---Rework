@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../assets/styles/pages-template.css" />
     <link rel="stylesheet" href="../assets/styles/accessibility.css" />
     <link rel="stylesheet" href="../assets/styles/main-text-template.css" />
-    <link rel="stylesheet" href="../assets/styles/downloadTable.css" />
+    <link rel="stylesheet" href="../assets/styles/search.css" />
   </head>
   <body>
     <div class="navbar">
@@ -234,29 +234,18 @@
       <div class="darken-overlay"></div>
 
       <div class="hero-main">
-        <p class="hero-title">Download Informasi Penting</p>
+        <p class="hero-title">Hasil Pencarian</p>
       </div>
     </section>
 
     <section class="main">
-      <div class="main-text-container big-gap">
-        <div class="table-container mid-gap">
-          <table class="download-table">
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>Nama File</th>
-                <th>Ekstensi</th>
-                <th>Ukuran</th>
-                <th>Download</th>
-              </tr>
-            </thead>
-            <tbody id="downloadTable"></tbody>
-          </table>
-          <div class="main-text-desc light-gray"
-            >Menampilkan : 1 sampai 5 dari 5 entri</div
-          >
+      <div class="main-query-container">
+        <div class="query-container">
+          <div class="query-head">Anda Mencari : </div>
+          <div class="query-result" id="query-result">Query</div>
         </div>
+
+        <div class="empty-result"></div>
       </div>
     </section>
 
@@ -383,9 +372,11 @@
       </div>
     </div>
 
-    <script src="../components/downloadFiles.js"></script>
     <script src="../components/variables.js"></script>
     <script src="../components/searchForm.js"></script>
+    <script src="../components/searchFunctions.js"></script>
+    <script src="../components/displaySearch.js"></script>
+    <script src="../components/searchResult.js"></script>
     <script src="../components/accessibility.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 const accessibilityBtn = document.getElementById("accessability-btn");
 const accessibilityMenu = document.querySelector(".accessibility-menu");
 const closeBtn = document.getElementById("acc-close-btn");
+const footer = document.querySelector(".footer");
 
 const darkmodeBtn = document.getElementById("darkmode-btn");
 const smalltextBtn = document.getElementById("smalltext-btn");
@@ -105,6 +106,7 @@ const applyAllSaturation = (step) => {
   applySaturationOnWrapper(navBar, step);
   applySaturationOnWrapper(accessibilityBtn, step);
   applySaturationOnWrapper(accessibilityMenu, step);
+  applySaturationOnWrapper(footer, step);
 };
 
 const resetAllFilters = () => {
@@ -113,6 +115,7 @@ const resetAllFilters = () => {
   resetFilters(navBar);
   resetFilters(accessibilityBtn);
   resetFilters(accessibilityMenu);
+  resetFilters(footer, step);
 };
 
 const initSaturationSteps = () => {

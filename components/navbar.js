@@ -1,4 +1,3 @@
-const navBar = document.querySelector(".navbar-container");
 const heroSection = document.querySelector(".hero");
 let lastScrollY = window.scrollY;
 

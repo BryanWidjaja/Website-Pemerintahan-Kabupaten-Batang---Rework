@@ -133,6 +133,11 @@
 
 .search-bar {
   width: 20%;
+}
+
+.search-form {
+  height: 100%;
+  width: 100%;
   display: flex;
   background-color: var(--main-white);
   border: 0.1rem solid var(--main-lightgray);
@@ -149,6 +154,12 @@
 }
 
 .search-btn {
+  background: none;
+  border: none;
+  display: flex;
+}
+
+.search-btn img {
   height: 1.5rem;
   width: auto;
   object-fit: cover;

@@ -214,18 +214,19 @@
 
           <a href="./pages/layanan.html" class="nav-link nav-item">Layanan</a>
         </div>
-        <div class="search-bar">
-          <input
-            type="search"
-            id="search-input"
-            placeholder="Cari"
-            class="search-input"
-          />
-          <img
-            src="./assets/icons/search.svg"
-            alt="searchicon"
-            class="search-btn"
-          />
+        <div class="search-bar"
+          ><form class="search-form" id="search-form">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Cari"
+              class="search-input"
+              required
+            />
+            <button type="submit" class="search-btn">
+              <img src="./assets/icons/search.svg" alt="searchicon" />
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -466,6 +467,7 @@
     <script src="./components/navbar.js"></script>
     <script src="./components/renderNews.js"></script>
     <script src="./components/renderPhotoNews.js"></script>
+    <script src="./components/searchForm.js"></script>
     <script src="./components/index.js"></script>
     <script src="./components/accessibility.js"></script>
   </body>

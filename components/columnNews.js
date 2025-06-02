@@ -1,8 +1,3 @@
-const basePath =
-  window.location.hostname === "bryanwidjaja.github.io"
-    ? "/Website-Pemerintahan-Kabupaten-Batang---Rework"
-    : "";
-
 const renderNews = (newsColumnID, category = null, photoActive = false) => {
   fetch(`${basePath}/assets/json/news.json`)
     .then((res) => res.json())

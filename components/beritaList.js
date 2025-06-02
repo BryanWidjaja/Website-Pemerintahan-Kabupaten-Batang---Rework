@@ -1,5 +1,3 @@
-renderNews("terbaru-row", null, true, javaneseActive);
-
 const renderAllNews = () => {
   fetch(`${basePath}/assets/json/news.json`)
     .then((res) => res.json())
@@ -34,4 +32,5 @@ const renderAllNews = () => {
     .catch((error) => console.error("Fetch error:", error));
 };
 
+renderNews("terbaru-row", null, true, javaneseActive);
 renderAllNews();

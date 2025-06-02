@@ -1,8 +1,3 @@
-const basePath =
-  window.location.hostname === "bryanwidjaja.github.io"
-    ? "/Website-Pemerintahan-Kabupaten-Batang---Rework"
-    : "";
-
 const formatSizeWithDots = (num) => {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 };

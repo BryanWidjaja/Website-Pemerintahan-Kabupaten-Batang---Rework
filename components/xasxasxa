@@ -1,0 +1,49 @@
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("query-result").textContent = `${query}`;
+
+  const parentClass = "main-query-container";
+
+  Promise.all([
+    createResultContainer(parentClass, outputSearchNews, "Berita Batang"),
+    createResultContainer(
+      parentClass,
+      outputSearchDownloadables,
+      "Dokumen dan Informasi Penting"
+    ),
+  ]).then(([newsCount, downloadsCount]) => {
+    if (newsCount === 0 && downloadsCount === 0) {
+      emptyResult.innerHTML = `Hasil pencarian <strong>${query}</strong> tidak ditemukan.`;
+    }
+
+    const parentContainer = document.querySelector(`.${parentClass}`);
+    if (parentContainer) {
+      const infoParagraph = document.createElement("p");
+      infoParagraph.classList.add("search-info");
+      infoParagraph.textContent =
+        "Klik tab di bawah ini untuk melihat hasil pencarian";
+      parentContainer.appendChild(infoParagraph);
+    }
+
+    const resultTitleContainer = document.querySelectorAll(
+      ".result-title-container"
+    );
+    resultTitleContainer.forEach((titleContainer) => {
+      titleContainer.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const resultsContainer = titleContainer.closest(
+          ".result-title-container"
+        );
+
+        const resultTitleDesc =
+          titleContainer.querySelector(".result-title-desc");
+
+        const results = resultsContainer.nextElementSibling;
+        const isResultsVisible = results.classList.toggle("active");
+        resultsContainer.classList.toggle("active", isResultsVisible);
+        resultTitleDesc.classList.toggle("active", isResultsVisible);
+      });
+    });
+  });
+});
