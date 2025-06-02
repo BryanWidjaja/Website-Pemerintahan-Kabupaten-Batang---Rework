@@ -1,0 +1,38 @@
+[
+  {
+    "img-link": "./assets/images/lembagaBatang/bps.jpg",
+    "link": "https://batangkab.bps.go.id/"
+  },
+  {
+    "img-link": "./assets/images/lembagaBatang/ristek.jpg",
+    "link": "http://ristek.batangkab.go.id/"
+  },
+  {
+    "img-link": "./assets/images/lembagaBatang/jdih.jpg",
+    "link": "http://jdih.batangkab.go.id/"
+  },
+  {
+    "img-link": "./assets/images/lembagaBatang/sirup.jpg",
+    "link": "https://sirup.lkpp.go.id/sirup/ro/rekap/klpd/D136"
+  },
+  {
+    "img-link": "./assets/images/lembagaBatang/sds.jpg",
+    "link": "http://sds.batangkab.go.id/"
+  },
+  {
+    "img-link": "./assets/images/lembagaBatang/pdambatang.jpg",
+    "link": "https://www.sendangkamulyan.co.id/"
+  },
+  {
+    "img-link": "./assets/images/lembagaBatang/polresbatang.jpg",
+    "link": "http://www.polresbatang.com/"
+  },
+  {
+    "img-link": "./assets/images/lembagaBatang/kpu.jpg",
+    "link": "http://kpu-batangkab.go.id/"
+  },
+  {
+    "img-link": "./assets/images/lembagaBatang/bpbd.jpg",
+    "link": "http://portal.batangkab.go.id:8080/rendalasystem/"
+  }
+]

@@ -41,16 +41,16 @@
       );
     }
 
-    &[reverse] > article {
+    &[reverse] > .carousel-item {
       animation-direction: reverse;
     }
 
-    &:hover > article {
+    &:hover > .carousel-item {
       animation-play-state: paused;
     }
   }
 
-  .carousel > article {
+  .carousel > .carousel-item {
     position: absolute;
     top: 0.5rem;
     left: calc(100% + var(--carousel-item-gap));
@@ -66,30 +66,32 @@
     animation-delay: calc(
       (var(--carousel-duration) / var(--items)) * var(--i) * -1
     );
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.75rem var(--black-15);
   }
 
-  .carousel > article:is(:nth-child(1)) {
+  .carousel > .carousel-item:is(:nth-child(1)) {
     --i: 0;
   }
-  .carousel > article:is(:nth-child(2)) {
+  .carousel > .carousel-item:is(:nth-child(2)) {
     --i: 1;
   }
-  .carousel > article:is(:nth-child(3)) {
+  .carousel > .carousel-item:is(:nth-child(3)) {
     --i: 2;
   }
-  .carousel > article:is(:nth-child(4)) {
+  .carousel > .carousel-item:is(:nth-child(4)) {
     --i: 3;
   }
-  .carousel > article:is(:nth-child(5)) {
+  .carousel > .carousel-item:is(:nth-child(5)) {
     --i: 4;
   }
-  .carousel > article:is(:nth-child(6)) {
+  .carousel > .carousel-item:is(:nth-child(6)) {
     --i: 5;
   }
-  .carousel > article:is(:nth-child(7)) {
+  .carousel > .carousel-item:is(:nth-child(7)) {
     --i: 6;
   }
-  .carousel > article:is(:nth-child(8)) {
+  .carousel > .carousel-item:is(:nth-child(8)) {
     --i: 7;
   }
 
@@ -98,7 +100,6 @@
     height: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
-    box-shadow: 0 0 0.75rem var(--black-15);
   }
 
   @keyframes marquee {
