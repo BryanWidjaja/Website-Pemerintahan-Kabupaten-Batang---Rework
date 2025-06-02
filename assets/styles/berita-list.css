@@ -41,14 +41,38 @@
   align-items: center;
 }
 
+.berita-foto-row,
 .berita-container-row {
   width: 100%;
   display: flex;
   gap: 2rem;
 }
 
+.berita-foto-container,
 .berita-container {
   width: 31.5%;
+}
+
+.berita-foto-link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.berita-foto-link img {
+  width: 100%;
+  height: 90%;
+  border-radius: 0.5rem;
+  border: 0.01rem solid var(--main-lightgray);
+  box-shadow: 0 0 0.75rem var(--black-15);
+}
+
+.berita-foto-link:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .berita-container {
