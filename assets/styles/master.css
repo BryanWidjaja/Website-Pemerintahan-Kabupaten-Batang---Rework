@@ -70,6 +70,7 @@
 [data-theme="light"] {
   --main-white: #ffffff;
   --main-offwhite: #fefefc;
+  --main-verylightgray: #f1f1f0;
   --main-lightgray: #999999;
   --main-darkgray: #3d403c;
   --main-charcoal: #242924;
@@ -80,6 +81,7 @@
 [data-theme="dark"] {
   --main-white: #2f302e;
   --main-offwhite: #3f413f;
+  --main-verylightgray: #494a48;
   --main-lightgray: #90968f;
   --main-darkgray: #d6dcd4;
   --main-charcoal: #f4f9f3;

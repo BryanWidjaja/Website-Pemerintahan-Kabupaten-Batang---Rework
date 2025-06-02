@@ -1,0 +1,61 @@
+.main-text-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main-text-withimg-container {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.main-text-header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.main-text-desc {
+  width: 100%;
+}
+
+.main-text-container-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.main-text-img-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  color: var(--main-lightgray);
+  font-size: 0.85rem;
+}
+
+.main-text-img-container img {
+  height: 80%;
+}
+
+.main-text-container a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.df-jcc {
+  display: flex;
+  justify-content: center;
+}
+
+.lower-gap {
+  gap: 0.25rem;
+}
+
+.mid-gap {
+  gap: 0.75rem;
+}
