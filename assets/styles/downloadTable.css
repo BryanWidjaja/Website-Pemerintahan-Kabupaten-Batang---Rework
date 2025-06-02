@@ -26,10 +26,19 @@ th {
   transform: scale(1.05);
 }
 
-a:hover {
+td > a:hover {
   text-decoration: none !important;
 }
 
 .light-gray {
   color: var(--main-lightgray);
+}
+
+.melon {
+  color: var(--main-melon);
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
 }
