@@ -36,6 +36,7 @@ const appendPhotoRows = () => {
   const parent = document.querySelector(`.main`);
   const container = document.createElement("div");
   container.classList.add("main-sections");
+  container.id = "Foto";
   container.innerHTML = `
     <div class="section-header">
       <p class="section-header-title">Berita <strong>Foto</strong></p>

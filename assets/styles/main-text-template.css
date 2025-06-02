@@ -102,12 +102,14 @@
   width: 80%;
 }
 
-.distance-list, .mountain-list {
-    margin: 0;
-    padding-left: 1.1rem;
+.distance-list,
+.mountain-list {
+  margin: 0;
+  padding-left: 1.1rem;
 }
 
-.distance-list li, .mountain-list li {
-    margin-bottom: 0.5rem;
-    padding-left: 0.25rem;
+.distance-list li,
+.mountain-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
 }
