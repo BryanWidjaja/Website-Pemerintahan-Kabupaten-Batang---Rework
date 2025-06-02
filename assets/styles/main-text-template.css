@@ -68,3 +68,19 @@
   display: flex;
   gap: 0.5rem;
 }
+
+.tac {
+  text-align: center;
+}
+
+.mid-width {
+  width: 60%;
+}
+
+.light-gray {
+  color: var(--main-lightgray);
+}
+
+.melon {
+  color: var(--main-melon);
+}

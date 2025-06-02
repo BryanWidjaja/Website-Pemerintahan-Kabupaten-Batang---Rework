@@ -3,7 +3,7 @@ const basePath =
     ? "/Website-Pemerintahan-Kabupaten-Batang---Rework"
     : "";
 
-const renderNews = (newsColumnID, category = null) => {
+const renderNews = (newsColumnID, category = null, photoActive = false) => {
   fetch(`${basePath}/assets/json/news.json`)
     .then((res) => res.json())
     .then((data) => {
@@ -36,26 +36,33 @@ const renderNews = (newsColumnID, category = null) => {
 
       articles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
+      const filteredArticles = articles.filter(
+        (article) => article.title !== title
+      );
+
+      let sliceEnd = filteredArticles.length;
+      if (photoActive) {
+        sliceEnd = Math.floor(sliceEnd / 2);
+      }
+
       parentElement.innerHTML = "";
 
-      articles.forEach((article) => {
-        if (article.title === title) return;
+      filteredArticles.slice(0, sliceEnd).forEach((article) => {
         const container = document.createElement("div");
         container.classList.add("berita-container");
         container.innerHTML = `
           <img src="../assets/images/berita/${article.img.src}.jpg" alt="${
           article.title
         }" class="berita-img" />
-        <div class="berita-text-container">
+          <div class="berita-text-container">
             <a href="./berita.html?title=${encodeURIComponent(
               article.title
-            )}" class="berita-title">${article.title}</a>
-            
+            )}" class="berita-title tdu">${article.title}</a>
             <div class="berita-info-container">
-                <img src="../assets/icons/date.svg" alt="date : " class="berita-info-icon invert-icons" />
-                <p class="berita-date">${article.date}</p>
+              <img src="../assets/icons/date.svg" alt="date : " class="berita-info-icon invert-icons" />
+              <p class="berita-date">${article.date}</p>
             </div>
-        </div>
+          </div>
         `;
 
         parentElement.appendChild(container);
@@ -64,4 +71,4 @@ const renderNews = (newsColumnID, category = null) => {
     .catch((error) => console.error("Fetch error:", error));
 };
 
-renderNews("berita-lainnya");
+renderNews("berita-lainnya", null, photoActive);

@@ -39,11 +39,28 @@ const insertDownloadables = (table) => {
         <td>${name}</td>
         <td>${ext}</td>
         <td>${size}</td>
-        <td><a href="${url}" download><div class="download-btn">Download</div></a></td>
+        <td>
+            <div 
+              class="download-btn" 
+              onclick="downloadFile('${url}', '${name}.${ext}')"
+            >
+              Download
+            </div>
+          </td>
       `;
         document.getElementById(table).appendChild(row);
       }
     });
+};
+
+const downloadFile = (url, filename) => {
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  alert(`Successfully downloaded ${filename}`);
 };
 
 insertDownloadables("downloadTable");

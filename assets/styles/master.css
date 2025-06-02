@@ -168,3 +168,7 @@ button {
 .jc-c {
   justify-content: center !important;
 }
+
+.tdu:hover {
+  text-decoration: underline;
+}

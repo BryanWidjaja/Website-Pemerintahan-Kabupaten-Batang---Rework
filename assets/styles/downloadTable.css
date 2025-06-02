@@ -19,23 +19,16 @@ th {
   padding: 0.25rem 0.75rem;
   border-radius: 0.75rem;
   transition: all 0.3s ease;
+  color: white;
 }
 
 .download-btn:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  filter: brightness(1.2);
 }
 
 td > a:hover {
   text-decoration: none !important;
-}
-
-.light-gray {
-  color: var(--main-lightgray);
-}
-
-.melon {
-  color: var(--main-melon);
 }
 
 .table-container {

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/styles/pages-template.css" />
     <link rel="stylesheet" href="../assets/styles/accessibility.css" />
     <link rel="stylesheet" href="../assets/styles/main-text-template.css" />
+    <link rel="stylesheet" href="../assets/styles/lapor.css" />
   </head>
   <body>
     <div class="navbar">
@@ -232,27 +233,118 @@
       <div class="darken-overlay"></div>
 
       <div class="hero-main">
-        <p class="hero-title">Layanan Kami</p>
+        <p class="hero-title">Lapor Bupati</p>
       </div>
     </section>
 
     <section class="main">
-      <div class="main-text-container lower-gap">
-        <div class="main-text-header">Lapor Bupati</div>
-        <div class="main-text-desc df-jcc tac mid-width">
-          Sampaikan keluhan, saran, dan aspirasi secara langsung kepada Bupati
-          demi perbaikan layanan dan pembangunan daerah.
+      <div class="main-text-container big-gap">
+        <div class="form-container">
+          <form class="lapor-form" method="post">
+            <div class="form-element-container">
+              <label for="name-input" class="form-label">Nama</label>
+              <input
+                type="text"
+                id="name-input"
+                name="name"
+                placeholder="Masukkan nama anda"
+                class="form-input"
+              />
+              <div class="errormsg" id="name-error"></div>
+            </div>
+
+            <div class="form-element-container">
+              <label for="email-input" class="form-label">Alamat e-mail</label>
+              <input
+                type="email"
+                id="email-input"
+                name="email-input"
+                placeholder="Masukkan alamat e-mail anda"
+                class="form-input"
+              />
+              <div class="errormsg" id="email-error"></div>
+            </div>
+
+            <div class="form-element-container">
+              <label for="age-input" class="form-label">Nomor telepon</label>
+              <input
+                type="number"
+                id="age-input"
+                name="age-input"
+                placeholder="Masukkan nomor telepon anda"
+                class="form-input"
+              />
+              <div class="errormsg" id="age-error"></div>
+            </div>
+
+            <div class="form-element-container">
+              <label class="form-label">Jenis Laporan</label>
+              <div class="form-element-row-container gap-2rem">
+                <div class="checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="interests-input"
+                    name="interests-input"
+                    class="checkbox"
+                  />
+                  <label for="interests-input" class="checkbox-label">
+                    Pengaduan
+                  </label>
+                </div>
+                <div class="checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="interests-input"
+                    name="interests-input"
+                    class="checkbox"
+                  />
+                  <label for="interests-input" class="checkbox-label">
+                    Aspirasi
+                  </label>
+                </div>
+                <div class="checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="interests-input"
+                    name="interests-input"
+                    class="checkbox"
+                  />
+                  <label for="interests-input" class="checkbox-label">
+                    Permintaan Informasi
+                  </label>
+                </div>
+              </div>
+
+              <div class="errormsg" id="interests-error"></div>
+            </div>
+
+            <div class="form-element-container">
+              <label for="age-input" class="form-label">Nomor telepon</label>
+              <input
+                type="number"
+                id="age-input"
+                name="age-input"
+                placeholder="Masukkan nomor telepon anda"
+                class="form-input"
+              />
+              <div class="errormsg" id="age-error"></div>
+            </div>
+
+            <div class="form-element-container">
+              <label for="age-input" class="form-label">Nomor telepon</label>
+              <input
+                type="number"
+                id="age-input"
+                name="age-input"
+                placeholder="Masukkan nomor telepon anda"
+                class="form-input"
+              />
+              <div class="errormsg" id="age-error"></div>
+            </div>
+
+            <button type="submit" class="form-btn">Lapor</button>
+          </form>
         </div>
-        <a href="./lapor.html">go here</a>
-      </div>
-      <div class="main-text-container lower-gap">
-        <div class="main-text-header"> Download Informasi Penting</div>
-        <div class="main-text-desc df-jcc tac mid-width">
-          akses cepat bagi masyarakat untuk mengunduh dokumen-dokumen resmi,
-          pengumuman, dan data penting yang berkaitan dengan kebijakan dan
-          layanan pemerintahan daerah.
-        </div>
-        <a href="./download.html">go here</a>
       </div>
     </section>
 
