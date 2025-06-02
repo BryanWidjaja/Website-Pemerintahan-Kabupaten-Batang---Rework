@@ -2,71 +2,90 @@ const laporForm = document.querySelector(".lapor-form");
 
 const nameInput = document.getElementById("name-input");
 const emailInput = document.getElementById("email-input");
-const passwordInput = document.getElementById("password-input");
-const ageInput = document.getElementById("age-input");
-const interestsInput = document.querySelectorAll("#interests-input");
-const termsInput = document.getElementById("terms-input");
-const privacyInput = document.getElementById("privacy-input");
+const phoneInput = document.getElementById("phone-input");
+const jenislaporInput = document.querySelectorAll(
+  'input[name="jenislapor-input"]'
+);
 const problemInput = document.getElementById("problem-input");
 const evidenceInput = document.getElementById("evidence-input");
 const fileInputText = document.getElementById("file-input-text");
 
 const nameError = document.getElementById("name-error");
 const emailError = document.getElementById("email-error");
-const passwordError = document.getElementById("password-error");
-const ageError = document.getElementById("age-error");
-const interestsError = document.getElementById("interests-error");
-const termsError = document.getElementById("terms-error");
-const privacyError = document.getElementById("privacy-error");
+const phoneError = document.getElementById("phone-error");
+const jenislaporError = document.getElementById("jenislapor-error");
 const problemError = document.getElementById("problem-error");
 const evidenceError = document.getElementById("evidence-error");
 
-evidenceInput.addEventListener('change', function(e) {
+evidenceInput.addEventListener("change", function (e) {
   const file = e.target.files[0];
   if (file) {
     fileInputText.textContent = file.name;
-    fileInputText.style.color = '#333';
+    fileInputText.style.color = "var(--main-lightgray)";
   } else {
-    fileInputText.textContent = 'Masukkan bukti yang anda miliki';
-    fileInputText.style.color = '#999';
+    fileInputText.textContent = "Masukkan bukti yang anda miliki";
+    fileInputText.style.color = "var(--main-lightgray)";
   }
 });
 
+const displayErrorMsg = (element, str) => {
+  element.textContent = str;
+};
+
+const resetAllErrorMsg = () => {
+  nameError.textContent = "";
+  emailError.textContent = "";
+  phoneError.textContent = "";
+  jenislaporError.textContent = "";
+  problemError.textContent = "";
+  evidenceError.textContent = "";
+};
+
 laporForm.addEventListener("submit", function (e) {
-  e.preventDefault();   
+  e.preventDefault();
 
   let valid = true;
 
   resetAllErrorMsg();
 
   if (!nameInput.value.trim()) {
-    displayErrorMsg(nameError, "Please enter your name!");
+    displayErrorMsg(nameError, "Masukkan nama anda!");
     valid = false;
   }
 
   if (!emailInput.value.trim()) {
-    displayErrorMsg(emailError, "Please enter your email!");
+    displayErrorMsg(emailError, "Masukkan alamat e-mail anda!");
     valid = false;
-  } else valid = validEmail(emailInput.value.trim());
+  } else if (!validEmail(emailInput.value.trim())) {
+    valid = false;
+  }
 
-  if (!passwordInput.value.trim()) {
-    displayErrorMsg(passwordError, "Please enter your password!");
+  if (!phoneInput.value.trim()) {
+    displayErrorMsg(phoneError, "Masukkan nomor telepon anda!");
     valid = false;
-  } else valid = validPassword(passwordInput.value.trim());
+  } else if (!validPhoneNumber(phoneInput.value.trim())) {
+    displayErrorMsg(phoneError, "Nomor telepon tidak valid!");
+    valid = false;
+  }
 
   let interestChecked = false;
 
-  interestsInput.forEach((checkbox) => {
+  jenislaporInput.forEach((checkbox) => {
     if (checkbox.checked) interestChecked = true;
   });
 
   if (!interestChecked) {
-    displayErrorMsg(interestsError, "Please select at least one interest");
+    displayErrorMsg(jenislaporError, "Tolong pilih minimal 1");
     valid = false;
   }
 
   if (!problemInput.value.trim()) {
-    displayErrorMsg(problemError, "Silakan masukkan permasalahan!");
+    displayErrorMsg(problemError, "Masukkan permasalahan anda!");
+    valid = false;
+  }
+
+  if (!evidenceInput.files || evidenceInput.files.length === 0) {
+    displayErrorMsg(evidenceError, "Masukkan bukti permasalahan anda!");
     valid = false;
   }
 
@@ -76,9 +95,17 @@ laporForm.addEventListener("submit", function (e) {
   }
 });
 
+const validPhoneNumber = (phone) => {
+  const phoneRegex = /^8\d{8,12}$/;
+  return phoneRegex.test(phone);
+};
+
 const validEmail = (emailInput) => {
   const atIndex = emailInput.indexOf("@");
-  if (atIndex <= 0) return false;
+  if (atIndex <= 0) {
+    displayErrorMsg(emailError, "Invalid email address");
+    return false;
+  }
 
   const afterAt = emailInput.substring(atIndex + 1);
   const dotIndex = afterAt.indexOf(".");
@@ -97,20 +124,4 @@ const hasUppercase = (passwordInput) => {
 
 const hasNumber = (passwordInput) => {
   return [...passwordInput].some((char) => char >= "0" && char <= "9");
-};
-
-const displayErrorMsg = (element, str) => {
-  element.textContent = str;
-};
-
-const resetAllErrorMsg = () => {
-  nameError.textContent = "";
-  emailError.textContent = "";
-  passwordError.textContent = "";
-  ageError.textContent = "";
-  interestsError.textContent = "";
-  termsError.textContent = "";
-  privacyError.textContent = "";
-  problemError.textContent = "";
-  evidenceError.textContent = "";
 };
