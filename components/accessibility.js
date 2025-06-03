@@ -115,7 +115,7 @@ const resetAllFilters = () => {
   resetFilters(navBar);
   resetFilters(accessibilityBtn);
   resetFilters(accessibilityMenu);
-  resetFilters(footer, step);
+  resetFilters(footer);
 };
 
 const initSaturationSteps = () => {
