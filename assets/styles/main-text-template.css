@@ -129,3 +129,11 @@
 .lambang-list li strong {
   font-weight: 600;
 }
+
+.bigger-img {
+  width: 25vw;
+}
+
+.w-a {
+  width: auto !important;
+}
