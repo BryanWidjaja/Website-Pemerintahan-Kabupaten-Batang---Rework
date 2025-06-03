@@ -1,38 +1,47 @@
 [
   {
     "img-link": "./assets/images/lembagaBatang/bps.jpg",
-    "link": "https://batangkab.bps.go.id/"
+    "link": "https://batangkab.bps.go.id/",
+    "name": "BPS Batang"
   },
   {
     "img-link": "./assets/images/lembagaBatang/ristek.jpg",
-    "link": "http://ristek.batangkab.go.id/"
+    "link": "http://ristek.batangkab.go.id/",
+    "name": "Ristek Batang"
   },
   {
     "img-link": "./assets/images/lembagaBatang/jdih.jpg",
-    "link": "http://jdih.batangkab.go.id/"
+    "link": "http://jdih.batangkab.go.id/",
+    "name": "JDIH Batang"
   },
   {
     "img-link": "./assets/images/lembagaBatang/sirup.jpg",
-    "link": "https://sirup.lkpp.go.id/sirup/ro/rekap/klpd/D136"
+    "link": "https://sirup.lkpp.go.id/sirup/ro/rekap/klpd/D136",
+    "name": "SIRUP LKPP"
   },
   {
     "img-link": "./assets/images/lembagaBatang/sds.jpg",
-    "link": "http://sds.batangkab.go.id/"
+    "link": "http://sds.batangkab.go.id/",
+    "name": "SDS Batang"
   },
   {
     "img-link": "./assets/images/lembagaBatang/pdambatang.jpg",
-    "link": "https://www.sendangkamulyan.co.id/"
+    "link": "https://www.sendangkamulyan.co.id/",
+    "name": "PDAM Batang"
   },
   {
     "img-link": "./assets/images/lembagaBatang/polres.jpg",
-    "link": "http://www.polresbatang.com/"
+    "link": "http://www.polresbatang.com/",
+    "name": "Polres Batang"
   },
   {
     "img-link": "./assets/images/lembagaBatang/kpu.jpg",
-    "link": "http://kpu-batangkab.go.id/"
+    "link": "http://kpu-batangkab.go.id/",
+    "name": "KPU Batang"
   },
   {
     "img-link": "./assets/images/lembagaBatang/bpbd.jpg",
-    "link": "http://portal.batangkab.go.id:8080/rendalasystem/"
+    "link": "http://portal.batangkab.go.id:8080/rendalasystem/",
+    "name": "BPBD Batang"
   }
 ]

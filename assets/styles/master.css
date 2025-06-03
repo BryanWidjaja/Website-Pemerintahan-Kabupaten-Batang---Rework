@@ -176,3 +176,7 @@ button {
 .ai-s {
   align-items: stretch !important;
 }
+
+.pr {
+  position: relative;
+}

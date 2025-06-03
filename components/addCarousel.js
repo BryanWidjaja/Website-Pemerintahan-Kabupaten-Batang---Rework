@@ -12,17 +12,25 @@ const addCarousel = (carouselID, jsonName) => {
         const carouselItem = document.createElement("div");
         carouselItem.classList.add("carousel-item");
 
+        carouselItem.style.backgroundImage = `url(${item["img-link"]})`;
+        carouselItem.style.backgroundSize = "cover";
+        carouselItem.style.backgroundPosition = "center";
+
+        const darken = document.createElement("div");
+        darken.classList.add("darken");
+        carouselItem.appendChild(darken);
+
+        const btn = document.createElement("button");
+        btn.classList.add("carousel-btn");
+
         const link = document.createElement("a");
         link.href = item.link;
         link.target = "_blank";
         link.rel = "noopener noreferrer";
+        link.textContent = item.name;
 
-        const img = document.createElement("img");
-        img.src = item["img-link"];
-        img.alt = "carousel image";
-
-        link.appendChild(img);
-        carouselItem.appendChild(link);
+        btn.appendChild(link);
+        carouselItem.appendChild(btn);
         parentElement.appendChild(carouselItem);
       });
     })

@@ -1,54 +1,67 @@
 [
   {
     "img-link": "./assets/images/layananPublik/elhkpn.jpg",
-    "link": "https://elhkpn.kpk.go.id/portal/user/pengumuman_lhkpn/U201dFZDdFdSVUZ6V1hkbVIwbHZXak0xU1djeFMxQkVhMnRMTDNoelFteEdURlV5U0RJNFQxb3JNU3RhVTFBMFkxSnBWaTlEYUZkTVJtOVhOa3RWT0E9PQ=="
+    "link": "https://elhkpn.kpk.go.id/portal/user/pengumuman_lhkpn/U201dFZDdFdSVUZ6V1hkbVIwbHZXak0xU1djeFMxQkVhMnRMTDNoelFteEdURlV5U0RJNFQxb3JNU3RhVTFBMFkxSnBWaTlEYUZkTVJtOVhOa3RWT0E9PQ==",
+    "name": "LHKPN"
   },
   {
     "img-link": "./assets/images/layananPublik/data.jpg",
-    "link": "http://data.batangkab.go.id/"
+    "link": "http://data.batangkab.go.id/",
+    "name": "Data Batang"
   },
   {
     "img-link": "./assets/images/layananPublik/laporbupati.jpg",
-    "link": "https://laporbupati.batangkab.go.id/"
+    "link": "https://laporbupati.batangkab.go.id/",
+    "name": "Lapor Bupati"
   },
   {
     "img-link": "./assets/images/layananPublik/pdambatang.jpg",
-    "link": "http://pdambatang.co.id/cek"
+    "link": "http://pdambatang.co.id/cek",
+    "name": "PDAM Batang"
   },
   {
     "img-link": "./assets/images/layananPublik/spgdt.jpg",
-    "link": "http://portal.batangkab.go.id/spgdt/"
+    "link": "http://portal.batangkab.go.id/spgdt/",
+    "name": "SPGDT"
   },
   {
     "img-link": "./assets/images/layananPublik/iujk.jpg",
-    "link": "http://portal.batangkab.go.id/iujk/"
+    "link": "http://portal.batangkab.go.id/iujk/",
+    "name": "IUJK"
   },
   {
     "img-link": "./assets/images/layananPublik/ppid.jpg",
-    "link": "http://ppid.batangkab.go.id/"
+    "link": "http://ppid.batangkab.go.id/",
+    "name": "PPID"
   },
   {
     "img-link": "./assets/images/layananPublik/lpse.jpg",
-    "link": "http://lpse.batangkab.go.id/"
+    "link": "http://lpse.batangkab.go.id/",
+    "name": "LPSE"
   },
   {
     "img-link": "./assets/images/layananPublik/jdih.jpg",
-    "link": "https://jdih.batangkab.go.id/"
+    "link": "https://jdih.batangkab.go.id/",
+    "name": "JDIH"
   },
   {
     "img-link": "./assets/images/layananPublik/karir.jpg",
-    "link": "https://karir.batangkab.go.id/"
+    "link": "https://karir.batangkab.go.id/",
+    "name": "Karir"
   },
   {
     "img-link": "./assets/images/layananPublik/sipuas.jpg",
-    "link": "https://sipuas.batangkab.go.id/"
+    "link": "https://sipuas.batangkab.go.id/",
+    "name": "SIPUAS"
   },
   {
     "img-link": "./assets/images/layananPublik/ekliping.jpg",
-    "link": "http://ekliping.batangkab.go.id/"
+    "link": "http://ekliping.batangkab.go.id/",
+    "name": "Ekliping"
   },
   {
     "img-link": "./assets/images/layananPublik/sirup.jpg",
-    "link": "https://sirup.lkpp.go.id/sirup/rekap/klpd/D136"
+    "link": "https://sirup.lkpp.go.id/sirup/rekap/klpd/D136",
+    "name": "SIRUP"
   }
 ]
