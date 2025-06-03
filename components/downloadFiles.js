@@ -6,6 +6,7 @@ const insertDownloadables = async (table) => {
   const response = await fetch(`${basePath}/assets/json/downloadables.json`);
   const data = await response.json();
   const reversed = data.slice().reverse();
+  console.log("test");
 
   const fileData = await Promise.all(
     reversed.map(async (file, index) => {
