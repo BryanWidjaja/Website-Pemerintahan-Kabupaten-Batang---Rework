@@ -142,8 +142,9 @@ const incrementStep = (keyParam, steps, incrementSize) => {
 
   let currentStep = stepCounters.get(keyParam);
 
-  if (currentStep >= MAX_STEPS) {
+  if (currentStep + 1 > MAX_STEPS) {
     steps.forEach((step) => step.classList.remove("active"));
+
     stepCounters.set(keyParam, 0);
     localStorage.setItem(keyParam, 0);
 
