@@ -1,7 +1,7 @@
 const containers = document.querySelectorAll(".carousel-container");
 const carousels = document.querySelectorAll(".carousel");
 
-const autoScrollSpeed = 0.75;
+const autoScrollSpeed = 0.25;
 
 containers.forEach((container, index) => {
   const innerContainer = carousels[index];
@@ -12,7 +12,6 @@ containers.forEach((container, index) => {
   let scrollLeft = 0;
   let autoScrollEnabled = true;
 
-  // Duplicate items for infinite loop
   innerContainer.innerHTML += innerContainer.innerHTML;
 
   container.addEventListener("mousedown", (e) => {
