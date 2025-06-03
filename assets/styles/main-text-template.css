@@ -115,7 +115,6 @@
 }
 
 .lambang-list {
-  /* margin: 1rem 0; */
   padding-left: 1rem;
   line-height: 1.6;
 }
@@ -136,4 +135,30 @@
 
 .w-a {
   width: auto !important;
+}
+
+.lembaga-items-container {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.lembaga-item-container {
+  height: 25vh;
+  width: 100%;
+  background-color: var(--main-offwhite);
+  padding: 1rem;
+  box-shadow: 0 0 0.75rem var(--black-15);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lembaga-item-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
