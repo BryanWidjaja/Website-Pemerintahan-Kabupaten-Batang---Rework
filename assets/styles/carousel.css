@@ -45,6 +45,7 @@
   pointer-events: auto;
   border-radius: 1rem;
   position: relative;
+  padding: 1rem;
 }
 
 .carousel-btn {

@@ -1,5 +1,15 @@
 [
   {
+    "img-link": "./assets/images/lembagaBatang/kecamatan.jpg",
+    "link": "./pages/kecamatan.html",
+    "name": "Kecamatan & Kelurahan"
+  },
+  {
+    "img-link": "./assets/images/lembagaBatang/dinas.jpg",
+    "link": "./pages/dinas.html",
+    "name": "Badan, Dinas, Kantor, & Lembaga Teknis"
+  },
+  {
     "img-link": "./assets/images/lembagaBatang/bps.jpg",
     "link": "https://batangkab.bps.go.id/",
     "name": "BPS Batang"
