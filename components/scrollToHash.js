@@ -3,7 +3,15 @@ window.addEventListener("load", () => {
   const tryScroll = () => {
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth" });
+
+        el.classList.add("highlighted");
+
+        setTimeout(() => {
+          el.classList.remove("highlighted");
+        }, 3000);
+      }, 100);
     } else {
       setTimeout(tryScroll, 100);
     }

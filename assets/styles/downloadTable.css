@@ -35,3 +35,7 @@ td > a:hover {
   display: flex;
   flex-direction: column;
 }
+
+.slightly-wider {
+  width: 8%;
+}

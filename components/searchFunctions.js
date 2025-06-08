@@ -53,7 +53,9 @@ const outputSearchDownloadables = (outputContainer) => {
         const el = document.createElement("div");
         el.classList.add("result-inner-container");
         el.innerHTML = `
-          <a href="${item.link}" class="berita-title" target="_blank">${item.name}</a>
+          <a href="../pages/download.html#${formatId(
+            item.name
+          )}" class="berita-title" target="_blank">${item.name}</a>
         `;
         container.appendChild(el);
       });

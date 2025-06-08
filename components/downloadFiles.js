@@ -29,6 +29,7 @@ const insertDownloadables = async (table) => {
 
   fileData.forEach(({ index, name, ext, size, url }) => {
     const row = document.createElement("tr");
+    row.id = formatId(name);
     row.innerHTML = `
       <td>${index}</td>
       <td>${name}</td>
@@ -58,3 +59,13 @@ const downloadFile = (url, filename) => {
 };
 
 insertDownloadables("downloadTable");
+
+window.addEventListener("DOMContentLoaded", () => {
+  const hash = window.location.hash;
+  if (hash) {
+    const element = document.querySelector(hash);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+});

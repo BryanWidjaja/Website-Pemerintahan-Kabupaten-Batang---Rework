@@ -180,3 +180,7 @@ button {
 .pr {
   position: relative;
 }
+
+.highlighted {
+  animation: highlight-fade 3s ease forwards;
+}
