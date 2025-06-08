@@ -64,13 +64,13 @@ td > a:hover {
 .pagination-btn {
   width: 2.25rem;
   height: 2.25rem;
-  background-color: var(--main-offwhite);
+  background-color: var(--main-white);
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--main-melon);
   border: 0.01rem solid var(--main-lightgray);
   border-right: none;
@@ -88,12 +88,12 @@ td > a:hover {
 }
 
 #pagination-controls button:first-of-type {
-  border-radius: 0.5rem 0 0 0.5rem;
+  border-radius: 0.25rem 0 0 0.25rem;
 }
 
 #pagination-controls button:last-of-type {
   border-right: 0.01rem solid var(--main-lightgray);
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 0.25rem 0.25rem 0;
 }
 
 button:disabled:not(.ends) {
