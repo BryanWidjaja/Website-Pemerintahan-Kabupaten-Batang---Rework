@@ -192,3 +192,15 @@ button {
 .df {
   display: flex;
 }
+
+.fd-c {
+  flex-direction: column;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.ai-fs {
+  align-items: flex-start !important;
+}
