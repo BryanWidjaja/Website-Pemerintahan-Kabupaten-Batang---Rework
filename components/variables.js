@@ -9,6 +9,6 @@ const basePath =
 let searchResult1 = 0;
 let searchResult2 = 0;
 
-const formatId = (str) => {
-  return str.replace(/[ /.]/g, "-");
-};
+// const formatId = (str) => {
+//   return str.replace(/[ /.]/g, "-");
+// };

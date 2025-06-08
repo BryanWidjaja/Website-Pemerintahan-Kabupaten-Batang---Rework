@@ -184,3 +184,11 @@ button {
 .highlighted {
   animation: highlight-fade 3s ease forwards;
 }
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.df {
+  display: flex;
+}

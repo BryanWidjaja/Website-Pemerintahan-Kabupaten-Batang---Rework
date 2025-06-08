@@ -263,23 +263,24 @@
     </section>
 
     <section class="main">
-      <div class="main-text-container big-gap">
+      <div class="main-text-container mid-gap">
         <div class="table-container mid-gap">
           <table class="download-table">
             <thead>
               <tr>
-                <th>No</th>
+                <th class="num">No</th>
                 <th>Nama File</th>
-                <th>Ekstensi</th>
-                <th class="slightly-wider">Ukuran</th>
-                <th>Download</th>
+                <th class="ekstensi">Ekstensi</th>
+                <th class="ukuran">Ukuran</th>
+                <th class="download">Download</th>
               </tr>
             </thead>
             <tbody id="downloadTable"></tbody>
           </table>
-          <div class="main-text-desc light-gray"
-            >Menampilkan : 1 sampai 5 dari 5 entri</div
-          >
+        </div>
+        <div class="main-text-desc light-gray df jc-sb">
+          <div id="pagination-summary"></div>
+          <div id="pagination-controls"></div>
         </div>
       </div>
     </section>
@@ -410,7 +411,6 @@
     <script src="../components/variables.js"></script>
     <script src="../components/searchForm.js"></script>
     <script src="../components/downloadFiles.js"></script>
-    <script src="../components/scrollToHash.js"></script>
     <script src="../components/accessibility.js"></script>
   </body>
 </html>

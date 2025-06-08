@@ -34,8 +34,73 @@ td > a:hover {
 .table-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.slightly-wider {
+.ekstensi {
   width: 8%;
+}
+
+.ukuran {
+  width: 8%;
+}
+
+.download {
+  width: 10%;
+}
+
+.num {
+  width: 2%;
+}
+
+#pagination-summary {
+  font-size: 0.9rem;
+}
+
+#pagination-controls {
+  display: flex;
+}
+
+.pagination-btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: var(--main-offwhite);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: var(--main-melon);
+  border: 0.01rem solid var(--main-lightgray);
+  border-right: none;
+  font-weight: 600;
+}
+
+.pagination-btn:hover {
+  cursor: pointer;
+}
+
+.ends {
+  padding-top: 0.8rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#pagination-controls button:first-of-type {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#pagination-controls button:last-of-type {
+  border-right: 0.01rem solid var(--main-lightgray);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+button:disabled:not(.ends) {
+  background: var(--primary-gradient);
+  color: white;
+}
+
+button:disabled.ends {
+  color: var(--main-lightgray);
 }
