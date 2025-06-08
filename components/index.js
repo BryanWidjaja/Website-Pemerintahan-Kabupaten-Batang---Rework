@@ -13,7 +13,7 @@ addCarousel("layananPublikCarousel", "layananPublik")
       focus: "center",
       arrows: false,
       pagination: false,
-      autoScroll: { speed: 0.5 },
+      autoScroll: { speed: 0.33 },
       autoWidth: true,
     }).mount({ AutoScroll });
   })
@@ -27,7 +27,7 @@ addCarousel("lembagaBatangCarousel", "lembagaBatang")
       focus: "center",
       arrows: false,
       pagination: false,
-      autoScroll: { speed: 0.5 },
+      autoScroll: { speed: 0.33 },
       autoWidth: true,
     }).mount({ AutoScroll });
   })

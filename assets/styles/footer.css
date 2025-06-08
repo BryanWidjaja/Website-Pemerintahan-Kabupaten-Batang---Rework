@@ -29,6 +29,7 @@
 
 .footer-link:hover {
   color: var(--main-melon);
+  cursor: pointer;
 }
 
 .footer-bottom {
