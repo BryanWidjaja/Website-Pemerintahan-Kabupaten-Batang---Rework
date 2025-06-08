@@ -1,17 +1,20 @@
 const addCarousel = (carouselID, jsonName) => {
-  fetch(`${basePath}/assets/json/${jsonName}.json`)
+  return fetch(`${basePath}/assets/json/${jsonName}.json`)
     .then((res) => res.json())
     .then((data) => {
-      const parentElement = document.querySelector(`#${carouselID}`);
-      if (!parentElement) {
-        console.error(`Parent element #${carouselID} not found`);
-        return;
+      const list = document.querySelector(`#${carouselID} .splide__list`);
+
+      if (!list) {
+        console.error(`.splide__list inside #${carouselID} not found`);
+        return Promise.reject(`.splide__list inside #${carouselID} not found`);
       }
 
       data.forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.classList.add("splide__slide");
+
         const carouselItem = document.createElement("div");
         carouselItem.classList.add("carousel-item");
-
         carouselItem.style.backgroundImage = `url(${item["img-link"]})`;
         carouselItem.style.backgroundSize = "cover";
         carouselItem.style.backgroundPosition = "center";
@@ -31,10 +34,13 @@ const addCarousel = (carouselID, jsonName) => {
 
         btn.appendChild(link);
         carouselItem.appendChild(btn);
-        parentElement.appendChild(carouselItem);
+
+        listItem.appendChild(carouselItem);
+        list.appendChild(listItem);
       });
     })
-    .catch((error) => console.error("Fetch error:", error));
+    .catch((error) => {
+      console.error("Fetch error:", error);
+      return Promise.reject(error);
+    });
 };
-
-// test
