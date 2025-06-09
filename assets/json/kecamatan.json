@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Kecamatan Wonotunggal",
+    "address": "Jl. Raya Wonotunggal No. 01 Batang",
+    "phone": "(0285) 689005",
+    "email": "kec_wonotunggal@batangkab.go.id",
+    "website": "wonotunggal.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Bandar",
+    "address": "Jl. Raya Bandar No. 123 Batang",
+    "phone": "(0285) 689002",
+    "email": "kec_bandar@batangkab.go.id",
+    "website": "bandar.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Blado",
+    "address": "Jl. Raya No. 02 Blado - Batang",
+    "phone": "(0285) 4486117",
+    "email": "kec_blado@batangkab.go.id",
+    "website": "blado.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Reban",
+    "address": "Jl. Raya Reban - Limpung",
+    "phone": "(0285) 4486835",
+    "email": "kec_reban@batangkab.go.id",
+    "website": "reban.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Bawang",
+    "address": "Jl. Raya Bawang No. 17 Batang 51274",
+    "phone": "(0285) 4486577",
+    "email": "kec_bawang@batangkab.go.id",
+    "website": "bawang.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Tersono",
+    "address": "Jl. Raya Tersono No. 1",
+    "phone": "(0285) 4468909",
+    "email": "kec_tersono@batangkab.go.id",
+    "website": "tersono.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Gringsing",
+    "address": "Jl. Raya Plelen No. 24 Gringsing 51281",
+    "phone": "(0285) 641001",
+    "email": "kec_gringsing@batangkab.go.id",
+    "website": "gringsing.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Limpung",
+    "address": "Jl. Raya No. 15 Limpung Batang 51271",
+    "phone": "(0285) 4468203",
+    "email": "kec_limpung@batangkab.go.id",
+    "website": "limpung.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Subah",
+    "address": "Jl. Raya Subah No. 1",
+    "phone": "(0285) 666205",
+    "email": "kec_subah@batangkab.go.id",
+    "website": "subah.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Tulis",
+    "address": "Jl. Raya Kaliboyo No. 1 Tulis",
+    "phone": "(0285) 391608",
+    "email": "kec_tulis@batangkab.go.id",
+    "website": "tulis.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Batang",
+    "address": "Jl. Perintis Kemerdekaan No. 1 Batang",
+    "phone": "(0285) 391049",
+    "email": "kec_batang@batangkab.go.id",
+    "website": "kecamatanbatang.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Warungasem",
+    "address": "Jl. Raya Warungasem No. 09 Batang 51252",
+    "phone": "(0285) 4417885",
+    "email": "kec_warungasem@batangkab.go.id",
+    "website": "warungasem.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Kandeman",
+    "address": "Jl. Raya Kandeman",
+    "phone": "(0285) 391974",
+    "email": "kec_kandeman@batangkab.go.id",
+    "website": "kandeman.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Pecalungan",
+    "address": "Jl. Raya Pecalungan Km. 01",
+    "phone": "",
+    "email": "kec_pecalungan@batangkab.go.id",
+    "website": "pecalungan.batangkab.go.id"
+  },
+  {
+    "name": "Kecamatan Banyuputih",
+    "address": "Jl. Raya Banyuputih - Limpung Km. 1 No. 242",
+    "phone": "(0285) 4469002",
+    "email": "kec_banyuputih@batangkab.go.id",
+    "website": "banyuputih.batangkab.go.id"
+  }
+]

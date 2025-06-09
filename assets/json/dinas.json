@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Dinas Pendidikan dan Kebudayaan (Disdikbud)",
+    "address": "Jl. Slamet Riyadi No. 29 Batang 51214",
+    "phone": "(0285) 391321",
+    "email": "disdikbud@batangkab.go.id",
+    "website": "disdikbud.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Kesehatan (Dinkes)",
+    "address": "Jl. Jendral Sudirman No.417, Kasepuhan, Kec. Batang, Kabupaten Batang, Jawa Tengah 51214",
+    "phone": "(0285) 391479",
+    "email": "dinkes@batangkab.go.id",
+    "website": "dinkes.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Pekerjaan Umum dan Penataan Ruang (DPU dan PR)",
+    "address": "Jl. Jendral Sudirman No.272, Kec. Batang, Kabupaten Batang, Jawa Tengah 51216",
+    "phone": "(0285) 391014",
+    "email": "dpupr@batangkab.go.id",
+    "website": "dpupr.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Perumahan Rakyat dan Kawasan Permukiman (DPRKP)",
+    "address": "Jl. Dr. Soetomo No. 18 Batang",
+    "phone": "(0285) 392575",
+    "email": "dprkp@batangkab.go.id",
+    "website": "dprkp.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Sosial (Dinsos)",
+    "address": "JL. Letjend.R.Suprapto, No. 04, Kasepuhan, Kec. Batang, Kabupaten Batang, Jawa Tengah 51216",
+    "phone": "(0825) 392320",
+    "email": "dinsos@batangkab.go.id",
+    "website": "dinsos.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu (DPMPTSP)",
+    "address": "Jl. Urip Sumoharjo No. 13 Batang 51212",
+    "phone": "(0285) 4493081",
+    "email": "dpmptsp@batangkab.go.id",
+    "website": "ptsp.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Perhubungan (Dishub)",
+    "address": "Jl. Raya Kandeman KM 05 Batang 51261",
+    "phone": "(0285) 391387",
+    "email": "dishub@batangkab.go.id",
+    "website": "dishub.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Komunikasi dan Informatika (Diskominfo)",
+    "address": "Jl. RA Kartini Nomor 1 Batang",
+    "phone": "(0285) 392219",
+    "email": "info@batangkab.go.id",
+    "website": "kominfo.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Kependudukan dan Pencatatan Sipil (Disdukcapil)",
+    "address": "Jl. Urip Sumoharjo No. 11A Batang 51212",
+    "phone": "(0285) 391083 / 392838",
+    "email": "disdukcapil@batangkab.go.id",
+    "website": "disdukcapil.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Pariwisata, Kepemudaan dan Olahraga (Disparpora)",
+    "address": "Jl. RA Kartini Nomor 1 Batang",
+    "phone": "(0285) 391141",
+    "email": "disparpora@batangkab.go.id",
+    "website": "pariwisata.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Pemberdayaan Perempuan dan Perlindungan Anak, Pengendalian Penduduk dan Keluarga Berencana (DP3AP2KB)",
+    "address": "Jl. Dr. Sutomo No. 58 Batang 51215",
+    "phone": "(0285) 391271",
+    "email": "dp3ap2kb@batangkab.go.id",
+    "website": "dp3ap2kb.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Pangan dan Pertanian (Dispaperta)",
+    "address": "Jl. Ahmad Yani No.943, sawahan, Kauman, Kec. Batang, Kabupaten Batang, Jawa Tengah 51216",
+    "phone": "(0285) 391092",
+    "email": "dispaperta@batangkab.go.id",
+    "website": "dispaperta.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Kelautan, Perikanan dan Peternakan (Dislutkanak)",
+    "address": "Jl. RA Kartini Nomor 12 Batang",
+    "phone": "(0285) 391749",
+    "email": "dislutkanak@batangkab.go.id",
+    "website": "dislutkanak.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Lingkungan Hidup (DLH)",
+    "address": "Jl. RA Kartini Nomor 1 Batang",
+    "phone": "(0285) 392885",
+    "email": "dlh@batangkab.go.id",
+    "website": "dlh.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Perindustrian, Perdagangan, Koperasi dan UKM (Disperindagkop dan UKM)",
+    "address": "Jl. Slamet Riyadi No.27, Kasepuhan, Kec. Batang, Kabupaten Batang, Jawa Tengah 51216",
+    "phone": "(0285) 391389",
+    "email": "disperindagkop@batangkab.go.id",
+    "website": "disperindagkop.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Pemberdayaan Masyarakat dan Desa (Dispermasdes)",
+    "address": "Jl. RA Kartini Nomor 1 Batang",
+    "phone": "(0285) 391428",
+    "email": "dispermasdes@batangkab.go.id",
+    "website": "dispermades.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Perpustakaan dan Kearsipan (Disperpuska)",
+    "address": "Jl. Dr. Wachidin No.54, Kauman, Kec. Batang, Kabupaten Batang, Jawa Tengah 51215",
+    "phone": "(0285) 391015 , 391373",
+    "email": "disperpuska@batangkab.go.id",
+    "website": "perpustakaan.batangkab.go.id"
+  },
+  {
+    "name": "Dinas Ketenagakerjaan",
+    "address": "Jl Tentara Pelajar Gg 32 No 2",
+    "phone": "085291591191",
+    "email": "disnaker@batangkab.go.id",
+    "website": "disnaker.batangkab.go.id"
+  }
+]

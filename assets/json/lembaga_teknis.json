@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Inspektorat",
+    "address": "Jl. Jend. Urip Sumoharjo No. 11 Batang 51212",
+    "phone": "(0285) 391980",
+    "email": "inspektorat@batangkab.go.id",
+    "website": "inspektorat.batangkab.go.id"
+  },
+  {
+    "name": "Satuan Polisi Pamong Praja (Satpol PP)",
+    "address": "Jl. Veteran No. 10 Batang 51215",
+    "phone": "(0285) 392563",
+    "email": "satpolpp@batangkab.go.id",
+    "website": "satpolpp.batangkab.go.id"
+  },
+  {
+    "name": "RSUD Kabupaten Batang",
+    "address": "Jl. Dr. Soetomo No. 42 Batang 51215",
+    "phone": "(0285) 391033",
+    "email": "rsudbatang@batangkab.go.id",
+    "website": "rsud.batangkab.go.id"
+  },
+  {
+    "name": "RSUD Limpung",
+    "address": "Jl. Dr. Sutomo No. 17 Limpung Kab. Batang",
+    "phone": "(0285) 4468362",
+    "email": "rsudlimpung@batangkab.go.id",
+    "website": "rsudlimpung.batangkab.go.id"
+  }
+]

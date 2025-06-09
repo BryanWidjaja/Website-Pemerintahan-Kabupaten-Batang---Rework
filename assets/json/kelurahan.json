@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Kelurahan Watesalit",
+    "address": "Jl. Perintis Kemerdekaan No. 2 Batang",
+    "phone": "(0285) 7905603",
+    "email": "watesalit@batangkab.go.id",
+    "website": ""
+  },
+  {
+    "name": "Kelurahan Kasepuhan",
+    "address": "Jl. Lapangan Kanoman No. 7 Kasepuhan Batang",
+    "phone": "(0285) 392268",
+    "email": "kasepuhan@batangkab.go.id",
+    "website": ""
+  },
+  {
+    "name": "Kelurahan Kauman",
+    "address": "Jl. Dr. Wahidin No. 2 Batang",
+    "phone": "(0285) 4493132",
+    "email": "kauman@batangkab.go.id",
+    "website": ""
+  },
+  {
+    "name": "Kelurahan Proyonanggan Selatan",
+    "address": "Jl. Garuda II No. 10 Dracik Kampus Batang",
+    "phone": "",
+    "email": "proyonangganselatan@batangkab.go.id",
+    "website": ""
+  },
+  {
+    "name": "Kelurahan Proyonanggan Tengah",
+    "address": "Jl. Dr. Cipto No. 28 Batang",
+    "phone": "(0285) 391208",
+    "email": "proyonanggantengah@batangkab.go.id",
+    "website": ""
+  },
+  {
+    "name": "Kelurahan Proyonanggan Utara",
+    "address": "Jl. Yos Sudarso Gg. Citarum No. 2 Batang",
+    "phone": "",
+    "email": "proyonangganutara@batangkab.go.id",
+    "website": ""
+  },
+  {
+    "name": "Kelurahan Karangasem Selatan",
+    "address": "Jl. Lapangan Sekalong No. 1 Batang",
+    "phone": "(0285) 7929677",
+    "email": "karangasemselatan@batangkab.go.id",
+    "website": ""
+  },
+  {
+    "name": "Kelurahan Karangasem Utara",
+    "address": "Jl. RE Martadinata No. 233",
+    "phone": "(0285) 4494795",
+    "email": "karangasemutara@mail.batangkab.go.id",
+    "website": ""
+  },
+  {
+    "name": "Kelurahan Sambong",
+    "address": "Jl. Kyai Sambong No. 12",
+    "phone": "(0285) 392126",
+    "email": "sambong@batangkab.go.id",
+    "website": ""
+  }
+]

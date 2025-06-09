@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function outputSearchNewsCount(query) {
+const outputSearchNewsCount = (query) => {
   return fetch(`${basePath}/assets/json/news.json`)
     .then((res) => res.json())
     .then((data) => {
@@ -66,9 +66,9 @@ function outputSearchNewsCount(query) {
       return count;
     })
     .catch(() => 0);
-}
+};
 
-function outputSearchDownloadablesCount(query) {
+const outputSearchDownloadablesCount = (query) => {
   return fetch(`${basePath}/assets/json/downloadables.json`)
     .then((res) => res.json())
     .then((data) => {
@@ -76,4 +76,4 @@ function outputSearchDownloadablesCount(query) {
         .length;
     })
     .catch(() => 0);
-}
+};

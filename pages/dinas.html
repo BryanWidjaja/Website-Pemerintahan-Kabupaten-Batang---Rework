@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/styles/pages-template.css" />
     <link rel="stylesheet" href="../assets/styles/accessibility.css" />
     <link rel="stylesheet" href="../assets/styles/main-text-template.css" />
+    <link rel="stylesheet" href="../assets/styles/skpd-dropdown.css" />
   </head>
   <body>
     <div class="navbar">
@@ -253,35 +254,10 @@
       </div>
     </section>
 
-    <section class="main">
-      <div class="main-text-container h-50vh jc-c">
-        <div class="main-text-header">Badan</div>
-        <div class="lembaga-items-container">
-          <div class="lembaga-item-container">
-            <img
-              src="../assets/images/lembagaBatang/bkd.jpg"
-              alt="lembagaitemimg"
-            />
-            Badan Kepegawaian Daerah
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/bpbd.jpg" alt="lembagaitemimg" />
-            Badan Penanggulangan Bencana Daerah
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/bakesbangpol.jpg" alt="lembagaitemimg" />
-            Badan Kesatuan Bangsa dan Politik
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/bkd-keuangan.jpg" alt="lembagaitemimg" />
-            Badan Keuangan Daerah
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/bappeda.jpg" alt="lembagaitemimg" />
-            Badan Perencanaan Pembangunan Daerah
-          </div>
-        </div>
-      </div>
+    <section class="main big-gap">
+      <div class="main-query-container badan-container"> </div>
+      <div class="main-query-container dinas-container"> </div>
+      <div class="main-query-container lembaga-container"> </div>
     </section>
 
     <section class="footer bg-darkgray-gradient">
@@ -409,6 +385,8 @@
 
     <script src="../components/variables.js"></script>
     <script src="../components/searchForm.js"></script>
+    <script src="../components/createSKPDDropdown.js"></script>
+    <script src="../components/badan_dinas_lembaga.js"></script>
     <script src="../components/accessibility.js"></script>
   </body>
 </html>

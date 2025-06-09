@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Badan Perencanaan, Penelitian, dan Pengembangan (Bapelitbang)",
+    "address": "Jl. RA Kartini Nomor 1 Batang",
+    "phone": "(0285) 391131 / 392131",
+    "email": "bappelitbang@batangkab.go.id",
+    "website": "bappelitbang.batangkab.go.id"
+  },
+  {
+    "name": "Badan Pengelolaan Keuangan, Pendapatan dan Aset Daerah (BPKPAD)",
+    "address": "Jl. Urip Sumoharjo No. 18 Batang 51212",
+    "phone": "(0285) 391430",
+    "email": "bpkpad@batangkab.go.id",
+    "website": "bpkpad.batangkab.go.id"
+  },
+  {
+    "name": "Badan Kepegawaian Daerah (BKD)",
+    "address": "Jl. RA Kartini Nomor 1 Batang",
+    "phone": "(0285) 4493224",
+    "email": "bkd@batangkab.go.id",
+    "website": "bkd.batangkab.go.id"
+  },
+  {
+    "name": "Badan Kesatuan Bangsa dan Politik",
+    "address": "Jl. Veteran No. 10 Batang 51215",
+    "phone": "(0285) 392344",
+    "email": "kesbangpol@batangkab.go.id",
+    "website": "kesbangpol.batangkab.go.id"
+  },
+  {
+    "name": "Badan Penanggulangan Bencana Daerah (BPBD)",
+    "address": "Jl. Tentara Pelajar No. 01 Batang 51215",
+    "phone": "(0285) 391011",
+    "email": "bpbd@batangkab.go.id",
+    "website": "bpbd.batangkab.go.id"
+  }
+]
