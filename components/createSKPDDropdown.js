@@ -4,9 +4,9 @@ const createSKPDDropdown = (parentContainer, jsonPath, containerName) => {
   const wrapper = document.createElement("div");
   wrapper.classList.add("main-result-container");
   wrapper.innerHTML = `
-    <div class="result-title-container">
-      <div class="result-title">
-        <p class="result-title-main">${containerName}</p>
+    <div class="skpd-dropdown-title-container">
+      <div class="skpd-dropdown-title">
+        <p class="skpd-dropdown-title-main">${containerName}</p>
       </div>
       <img
         src="../assets/icons/triangle-down-charcoal.svg"
@@ -34,9 +34,9 @@ const createSKPDDropdown = (parentContainer, jsonPath, containerName) => {
     .then((data) => {
       data.forEach((item) => {
         const itemEl = document.createElement("div");
-        itemEl.classList.add("result-inner-container");
+        itemEl.classList.add("skpd-dropdown-inner-container");
         itemEl.innerHTML = `
-          <p>${item.name}</p>
+          <p class="skpd-inner-title">${item.name}</p>
           <p>${item.address}</p>
           <p>${item.phone}</p>
           <p>${item.email}</p>
