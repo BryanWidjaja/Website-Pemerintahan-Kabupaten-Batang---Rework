@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="../assets/styles/pages-template.css" />
     <link rel="stylesheet" href="../assets/styles/accessibility.css" />
     <link rel="stylesheet" href="../assets/styles/main-text-template.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="../assets/styles/splide.css" />
   </head>
   <body>
     <div class="navbar">
@@ -172,9 +177,9 @@
                 </div>
                 <div class="dropdown-buffer-vertical"></div>
                 <div class="navbar-drop-sidebar">
-                  <a href="./profilperangkat.html">Sekretariat Daerah</a>
+                  <a href="./sek_daerah.html">Sekretariat Daerah</a>
                   <div class="horizontal-line thin"></div>
-                  <a href="./profilperangkat.html">Sekretariat DPRD</a>
+                  <a href="./sek_dprd.html">Sekretariat DPRD</a>
                   <div class="horizontal-line thin"></div>
                   <a href="./dinas.html"
                     >Badan, Dinas, Kantor, & Lembaga Teknis</a
@@ -254,8 +259,87 @@
     </section>
 
     <section class="main">
-      <div class="main-text-container">
-        <div class="main-text-header"> Page Not Found </div>
+      <div class="main-text-container fd-r ai-fs">
+        <div class="splide" id="bupatiCarousel">
+          <div class="splide__track h-80">
+            <ul class="splide__list gap-0">
+              <li class="splide__slide items">
+                <div class="bupati-carousel-container">
+                  <img src="../assets/images/bupati/bupati.png" alt="bupati" />
+                  <p class="bupati-carousel-head">M. FAIZ KURNIAWAN, SH, MH</p>
+                  <p>Bupati Batang</p>
+                  <p>Periode 2025 - 2030</p>
+                </div>
+              </li>
+              <li class="splide__slide items">
+                <div class="bupati-carousel-container">
+                  <img
+                    src="../assets/images/bupati/wabup.png"
+                    alt="wakil-bupati"
+                  />
+                  <p class="bupati-carousel-head">SUYONO, S.IP., M.Si.</p>
+                  <p>Wakil Bupati Batang</p>
+                  <p>Periode 2025 - 2030</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-text-container-inner">
+          <div class="main-text-container tac mid-gap">
+            <div class="main-text-header">Visi</div>
+            <div class="horizontal-line"></div>
+            <div class="main-text-desc">
+              Batang yang sejahtera, maju, mantap, dan Mandiri berbasis potensi
+              unggulan.
+            </div>
+          </div>
+
+          <div class="main-text-container mid-gap">
+            <div class="main-text-header">Misi</div>
+            <div class="horizontal-line"></div>
+            <div class="main-text-container-inner mid-gap">
+              <div class="main-text-desc">
+                1. Meningkatkan kualitas pelayanan publik dengan tata kelola
+                pemerintahan berbasis eGovernment didukung pengembangan
+                kerjasama.
+              </div>
+              <div class="main-text-desc">
+                2. Meningkatkan kualitas pembangunan sumber daya manusia
+                seutuhnya melalui optimalisasi gerakan pemberdayaan masyarakat
+                di berbagai bidang secara terpadu.
+              </div>
+              <div class="main-text-desc">
+                3. Meningkatkan pengembangan perekonomian daerah secara
+                berkelanjutan didukung infrastruktur dan kawasan berkualitas
+                berbasis teknologi informasi dan komunikasi.
+              </div>
+              <div class="main-text-desc">
+                4. Meningkatkan keamanan, ketentraman dan kerukunan
+                (kondusifitas daerah) bagi pelaksanaan pembangunan didukung
+                dengan pengamalan ajaran keagamaann dan nilai-nilai budaya
+                luhur.
+              </div>
+            </div>
+          </div>
+
+          <div class="main-text-container mid-gap">
+            <div class="main-text-header">Prioritas Agenda Kegiatan</div>
+            <div class="horizontal-line"></div>
+            <div class="main-text-container-inner mid-gap">
+              <div class="main-text-desc">
+                1. Peningkatan Perekonomian Daerah.
+              </div>
+              <div class="main-text-desc">
+                2. Peningkatan Potensi Pariwisata Daerah.
+              </div>
+              <div class="main-text-desc">
+                3. Optimalisasi Pemanfaatan Teknologi Informasi dan Komunikasi
+                dalam Penyelenggaraan Pemerintahan.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -384,6 +468,7 @@
 
     <script src="../components/variables.js"></script>
     <script src="../components/searchForm.js"></script>
+    <script type="module" src="../components/visimisi.js"></script>
     <script src="../components/accessibility.js"></script>
   </body>
 </html>

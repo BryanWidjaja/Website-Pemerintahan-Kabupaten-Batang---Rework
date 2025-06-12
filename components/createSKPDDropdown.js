@@ -40,7 +40,7 @@ const createSKPDDropdown = (parentContainer, jsonPath, containerName) => {
         if (item.address) {
           infoHTML += `
             <div class="skpd-info-inner-container">
-              <img src="../assets/icons/location.svg" alt="v" class="skpd-inner-icon" />
+              <img src="../assets/icons/location.svg" alt="v" class="skpd-inner-icon invert-icons" />
               <p>${item.address}</p>
             </div>
           `;
@@ -49,7 +49,7 @@ const createSKPDDropdown = (parentContainer, jsonPath, containerName) => {
         if (item.phone) {
           infoHTML += `
             <div class="skpd-info-inner-container">
-              <img src="../assets/icons/phone.svg" alt="v" class="skpd-inner-icon" />
+              <img src="../assets/icons/phone.svg" alt="v" class="skpd-inner-icon invert-icons" />
               <p>${item.phone}</p>
             </div>
           `;
@@ -58,7 +58,7 @@ const createSKPDDropdown = (parentContainer, jsonPath, containerName) => {
         if (item.email) {
           infoHTML += `
             <div class="skpd-info-inner-container">
-              <img src="../assets/icons/email.svg" alt="v" class="skpd-inner-icon" />
+              <img src="../assets/icons/email.svg" alt="v" class="skpd-inner-icon invert-icons" />
               <p>${item.email}</p>
             </div>
           `;
@@ -67,7 +67,7 @@ const createSKPDDropdown = (parentContainer, jsonPath, containerName) => {
         if (item.website) {
           infoHTML += `
             <div class="skpd-info-inner-container">
-              <img src="../assets/icons/web.svg" alt="v" class="skpd-inner-icon" />
+              <img src="../assets/icons/web.svg" alt="v" class="skpd-inner-icon invert-icons" />
               <a href="https://${item.website}" target="_blank">${item.website}</a>
             </div>
           `;

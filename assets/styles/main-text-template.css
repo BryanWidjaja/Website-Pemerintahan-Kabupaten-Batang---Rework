@@ -170,3 +170,49 @@
   object-fit: cover;
   border-radius: 0.5rem;
 }
+
+.bupati-carousel-container {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bupati-carousel-container img {
+  height: 83.5%;
+}
+
+.bupati-carousel-head {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.gap-0 {
+  gap: 0rem !important;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.main-desc-info-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main-desc-info-icon {
+  height: 1.5rem;
+}
+
+.very-bigger-img {
+  width: 50%;
+}
+
+.w-0 {
+  width: 0;
+}
+
+.main-desc-info-container strong {
+  font-weight: 500;
+}

@@ -204,3 +204,7 @@ button {
 .ai-fs {
   align-items: flex-start !important;
 }
+
+.fd-r {
+  flex-direction: row;
+}

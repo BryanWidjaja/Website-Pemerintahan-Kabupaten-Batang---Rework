@@ -88,20 +88,6 @@
   display: flex;
 }
 
-.splide {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-.splide__track {
-  padding: 0.75rem 0;
-}
-
-.splide__list {
-  gap: 2rem;
-  list-style: none;
-}
-
 .splide__slide {
   width: 200px;
   height: 200px;
@@ -112,8 +98,4 @@
   cursor: grab;
   border-radius: 1rem;
   box-shadow: 0 0 0.75rem var(--black-15);
-}
-
-.splide__slide.is-active {
-  cursor: grabbing;
 }

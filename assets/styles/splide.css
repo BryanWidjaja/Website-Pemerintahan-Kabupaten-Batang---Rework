@@ -1,0 +1,17 @@
+.splide {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.splide__track {
+  padding: 0.75rem 0;
+}
+
+.splide__list {
+  gap: 2rem;
+  list-style: none;
+}
+
+.splide__slide.is-active {
+  cursor: grabbing;
+}
