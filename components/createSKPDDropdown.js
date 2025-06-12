@@ -23,7 +23,6 @@ const createSKPDDropdown = (parentContainer, jsonPath, containerName) => {
     `${containerName}-result-container`
   );
 
-  // Fetch the JSON from the given path
   fetch(jsonPath)
     .then((response) => {
       if (!response.ok) {
@@ -35,13 +34,52 @@ const createSKPDDropdown = (parentContainer, jsonPath, containerName) => {
       data.forEach((item) => {
         const itemEl = document.createElement("div");
         itemEl.classList.add("skpd-dropdown-inner-container");
+
+        let infoHTML = "";
+
+        if (item.address) {
+          infoHTML += `
+            <div class="skpd-info-inner-container">
+              <img src="../assets/icons/location.svg" alt="v" class="skpd-inner-icon" />
+              <p>${item.address}</p>
+            </div>
+          `;
+        }
+
+        if (item.phone) {
+          infoHTML += `
+            <div class="skpd-info-inner-container">
+              <img src="../assets/icons/phone.svg" alt="v" class="skpd-inner-icon" />
+              <p>${item.phone}</p>
+            </div>
+          `;
+        }
+
+        if (item.email) {
+          infoHTML += `
+            <div class="skpd-info-inner-container">
+              <img src="../assets/icons/email.svg" alt="v" class="skpd-inner-icon" />
+              <p>${item.email}</p>
+            </div>
+          `;
+        }
+
+        if (item.website) {
+          infoHTML += `
+            <div class="skpd-info-inner-container">
+              <img src="../assets/icons/web.svg" alt="v" class="skpd-inner-icon" />
+              <a href="https://${item.website}" target="_blank">${item.website}</a>
+            </div>
+          `;
+        }
+
         itemEl.innerHTML = `
           <p class="skpd-inner-title">${item.name}</p>
-          <p>${item.address}</p>
-          <p>${item.phone}</p>
-          <p>${item.email}</p>
-          <a href="https://${item.website}" target="_blank">${item.website}</a>
+          <div class="skpd-info-container">
+            ${infoHTML}
+          </div>
         `;
+
         resultsContainer.appendChild(itemEl);
       });
     })

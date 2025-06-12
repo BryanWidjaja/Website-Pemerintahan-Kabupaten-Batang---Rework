@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/styles/pages-template.css" />
     <link rel="stylesheet" href="../assets/styles/accessibility.css" />
     <link rel="stylesheet" href="../assets/styles/main-text-template.css" />
+    <link rel="stylesheet" href="../assets/styles/skpd-dropdown.css" />
   </head>
   <body>
     <div class="navbar">
@@ -176,11 +177,11 @@
                   <div class="horizontal-line thin"></div>
                   <a href="./profilperangkat.html">Sekretariat DPRD</a>
                   <div class="horizontal-line thin"></div>
-                  <a href="./profilperangkat.html"
+                  <a href="./dinas.html"
                     >Badan, Dinas, Kantor, & Lembaga Teknis</a
                   >
                   <div class="horizontal-line thin"></div>
-                  <a href="./profilperangkat.html">Kecamatan dan Kelurahan</a>
+                  <a href="./kecamatan.html">Kecamatan dan Kelurahan</a>
                 </div>
               </div>
 
@@ -253,64 +254,9 @@
       </div>
     </section>
 
-    <section class="main">
-      <div class="main-text-container h-50vh jc-c">
-        <div class="main-text-header">Kecamatan Limpung</div>
-        <div class="lembaga-items-container">
-          <div class="lembaga-item-container">
-            <img
-              src="../assets/images/sungkomangli.jpeg"
-              alt="lembagaitemimg"
-            />
-            Desa Sukomangli
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/babadan.jpg" alt="lembagaitemimg" />
-            Desa Babadan
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/babadan.jpg" alt="lembagaitemimg" />Desa
-            Donowangun
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/babadan.jpg" alt="lembagaitemimg" />Desa
-            Kutosari
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/babadan.jpg" alt="lembagaitemimg" />Desa
-            Ngaliyan
-          </div>
-        </div>
-      </div>
-
-      <div class="main-text-container h-50vh jc-c">
-        <div class="main-text-header">Kecamatan Gringsing</div>
-        <div class="lembaga-items-container">
-          <div class="lembaga-item-container">
-            <img
-              src="../assets/images/sungkomangli.jpeg"
-              alt="lembagaitemimg"
-            />
-            Desa Sukomangli
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/babadan.jpg" alt="lembagaitemimg" />
-            Desa Babadan
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/babadan.jpg" alt="lembagaitemimg" />Desa
-            Donowangun
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/babadan.jpg" alt="lembagaitemimg" />Desa
-            Kutosari
-          </div>
-          <div class="lembaga-item-container">
-            <img src="../assets/images/babadan.jpg" alt="lembagaitemimg" />Desa
-            Ngaliyan
-          </div>
-        </div>
-      </div>
+    <section class="main mid-big-gap">
+      <div class="skpd-dropdown-container kecamatan-container"> </div>
+      <div class="skpd-dropdown-container kelurahan-container"> </div>
     </section>
 
     <section class="footer bg-darkgray-gradient">
@@ -438,6 +384,8 @@
 
     <script src="../components/variables.js"></script>
     <script src="../components/searchForm.js"></script>
+    <script src="../components/createSKPDDropdown.js"></script>
+    <script src="../components/kecamatan_kelurahan.js"></script>
     <script src="../components/accessibility.js"></script>
   </body>
 </html>
