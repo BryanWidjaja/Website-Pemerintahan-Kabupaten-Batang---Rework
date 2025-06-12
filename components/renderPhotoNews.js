@@ -46,14 +46,14 @@ const renderPhotoNews = (
         const container = document.createElement("div");
         container.classList.add("berita-foto-container");
         container.innerHTML = `
-            <a href="${pagesLink}berita.html?title=${encodeURIComponent(
+        <a href="${pagesLink}berita.html?title=${encodeURIComponent(
           article.title
         )}-photo" class="berita-foto-link">
-                <img src="${pathStart}assets/images/berita/${
+          <img src="${pathStart}assets/images/berita/${
           article.img.src
         }.jpg" alt="${article.title}" />
-                ${article.title}
-              </a>
+          ${article.title}
+        </a>
         `;
 
         parentElement.appendChild(container);

@@ -83,9 +83,5 @@ const createSKPDDropdown = (parentContainer, jsonPath, containerName) => {
         resultsContainer.appendChild(itemEl);
       });
     })
-    .catch((error) => {
-      console.error("Failed to load JSON data:", error);
-      resultsContainer.innerHTML =
-        "<p style='color:red;'>Failed to load data.</p>";
-    });
+    .catch((error) => console.error("Fetch error:", error));
 };

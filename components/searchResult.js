@@ -1,7 +1,36 @@
 const emptyResult = document.querySelector(".empty-result");
 
+const outputSearchNewsCount = (query) => {
+  return fetch(`${basePath}/assets/json/news.json`)
+    .then((res) => res.json())
+    .then((data) => {
+      const categories = data.categories;
+      let count = 0;
+      Object.keys(categories).forEach((cat) => {
+        categories[cat].forEach((article) => {
+          if (article.title.toLowerCase().includes(query)) {
+            count++;
+          }
+        });
+      });
+      return count;
+    })
+    .catch((error) => console.error("Fetch error:", error));
+};
+
+const outputSearchDownloadablesCount = (query) => {
+  return fetch(`${basePath}/assets/json/downloadables.json`)
+    .then((res) => res.json())
+    .then((data) => {
+      return data.filter((item) => item.name.toLowerCase().includes(query))
+        .length;
+    })
+    .catch((error) => console.error("Fetch error:", error));
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   const queryResultEl = document.getElementById("query-result");
+
   queryResultEl.textContent = query;
 
   const parentClass = "main-query-container";
@@ -32,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultTitleContainers = document.querySelectorAll(
       ".result-title-container"
     );
+
     resultTitleContainers.forEach((titleContainer) => {
       titleContainer.addEventListener("click", (e) => {
         e.stopPropagation();
@@ -49,31 +79,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-const outputSearchNewsCount = (query) => {
-  return fetch(`${basePath}/assets/json/news.json`)
-    .then((res) => res.json())
-    .then((data) => {
-      const categories = data.categories;
-      let count = 0;
-      Object.keys(categories).forEach((cat) => {
-        categories[cat].forEach((article) => {
-          if (article.title.toLowerCase().includes(query)) {
-            count++;
-          }
-        });
-      });
-      return count;
-    })
-    .catch(() => 0);
-};
-
-const outputSearchDownloadablesCount = (query) => {
-  return fetch(`${basePath}/assets/json/downloadables.json`)
-    .then((res) => res.json())
-    .then((data) => {
-      return data.filter((item) => item.name.toLowerCase().includes(query))
-        .length;
-    })
-    .catch(() => 0);
-};

@@ -64,9 +64,7 @@ const renderMainNews = (containerClass, javanese = false, photo = false) => {
       )}</p>
     `;
     })
-    .catch((error) => {
-      console.error("Fetch error:", error);
-    });
+    .catch((error) => console.error("Fetch error:", error));
 };
 
 renderMainNews("main-berita-container", javaneseActive, photoActive);

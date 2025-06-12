@@ -33,7 +33,7 @@ const outputSearchNews = (outputContainer) => {
       return results.length;
     })
     .catch((error) => {
-      console.error("Search fetch error:", error);
+      console.error("Fetch error:", error);
       return 0;
     });
 };
@@ -61,7 +61,7 @@ const outputSearchDownloadables = (outputContainer) => {
       return results.length;
     })
     .catch((error) => {
-      console.error("Downloadables fetch error:", error);
+      console.error("Fetch error:", error);
       return 0;
     });
 };
