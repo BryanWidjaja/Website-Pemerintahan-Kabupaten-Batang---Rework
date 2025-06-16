@@ -208,3 +208,7 @@ button {
 .fd-r {
   flex-direction: row;
 }
+
+.h-a {
+  height: auto !important;
+}
