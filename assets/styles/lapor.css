@@ -244,3 +244,17 @@ option {
   background-color: var(--main-offwhite);
   /* border-bottom: 0.1rem solid var(--main-lightgray); */
 }
+
+.select-input {
+  /* padding: 0.75rem; */
+  font-size: 1rem;
+  color: inherit;
+  background-color: transparent;
+  /* border-radius: 0.5rem; */
+  /* border: 0.1rem solid var(--main-lightgray); */
+  transition: all 0.3s ease;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  width: 100%;
+}

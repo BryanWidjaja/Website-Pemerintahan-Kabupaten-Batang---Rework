@@ -52,7 +52,7 @@ laporForm.addEventListener("submit", function (e) {
   }
 
   if (!categoryInput.value) {
-    displayErrorMsg(categoryError, "Pilih kategori terlebih dahulu!");
+    displayErrorMsg(categoryError, "Pilih kategori laporan anda!");
     valid = false;
   }
 
