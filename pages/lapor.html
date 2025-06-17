@@ -255,21 +255,13 @@
     </section>
 
     <section class="main">
-      <div class="main-text-container big-gap">
+      <div class="main-text-container">
         <div class="form-container">
-          <form class="lapor-form" method="post">
-            <div class="form-element-container">
-              <label for="name-input" class="form-label">Nama</label>
-              <input
-                type="text"
-                id="name-input"
-                name="name"
-                placeholder="Masukkan nama anda"
-                class="form-input"
-              />
-              <div class="errormsg" id="name-error"></div>
-            </div>
+          <p class="form-title">Sampaikan Laporan Anda</p>
 
+          <div class="horizontal-line"></div>
+          <form class="lapor-form" method="post">
+            <!-- 
             <div class="form-element-container">
               <label for="email-input" class="form-label">Alamat e-mail</label>
               <input
@@ -296,7 +288,7 @@
                 />
               </div>
               <div class="errormsg" id="phone-error"></div>
-            </div>
+            </div> -->
 
             <div class="form-element-container">
               <label class="form-label">Jenis Laporan</label>
@@ -340,18 +332,70 @@
             </div>
 
             <div class="form-element-container">
-              <label for="problem-input" class="form-label">Permasalahan</label>
+              <label for="title-input" class="form-label">Judul</label>
+              <input
+                type="text"
+                id="title-input"
+                name="title"
+                placeholder="Ketik judul laporan anda"
+                class="form-input"
+              />
+              <div class="errormsg" id="title-error"></div>
+            </div>
+
+            <div class="form-element-container">
+              <label for="problem-input" class="form-label">Isi Laporan</label>
               <textarea
                 id="problem-input"
                 name="problem-input"
-                placeholder="Apa permasalahannya"
-                class="form-textarea"
+                placeholder="Ketik isi laporan anda"
+                class="form-textarea permasalahan-ta"
               ></textarea>
               <div class="errormsg" id="problem-error"></div>
             </div>
 
             <div class="form-element-container">
-              <label for="evidence-input" class="form-label">Bukti</label>
+              <label for="category-input" class="form-label">Kategori</label>
+              <select id="category-input" name="category" class="form-input">
+                <option value="" disabled selected>Pilih kategori</option>
+                <option value="lingkungan">-</option>
+                <option value="lingkungan">Lingkungan</option>
+                <option value="infrastruktur">Infrastruktur</option>
+                <option value="kesehatan">Kesehatan</option>
+                <option value="pendidikan">Pendidikan</option>
+                <option value="transportasi">Transportasi</option>
+                <option value="keamanan">Keamanan</option>
+                <option value="kebersihan">Kebersihan</option>
+                <option value="air">Air Bersih</option>
+                <option value="listrik">Listrik</option>
+                <option value="fasilitas">Fasilitas Umum</option>
+                <option value="administrasi">Administrasi</option>
+                <option value="bencana">Bencana Alam</option>
+                <option value="ekonomi">Ekonomi</option>
+                <option value="sosial">Sosial</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+              <div class="errormsg" id="category-error"></div>
+            </div>
+
+            <div class="form-element-container">
+              <label for="date-input" class="form-label"
+                >Tanggal Kejadian (Opsional)</label
+              >
+              <input
+                type="date"
+                id="date-input"
+                name="date"
+                placeholder="Ketik judul laporan anda"
+                class="form-input"
+              />
+              <div class="errormsg" id="date-error"></div>
+            </div>
+
+            <div class="form-element-container">
+              <label for="evidence-input" class="form-label"
+                >Bukti / Lampiran (Optional)</label
+              >
               <div class="file-input-container">
                 <input
                   type="file"
@@ -361,8 +405,8 @@
                 />
                 <div class="file-input-content">
                   <span class="file-input-text" id="file-input-text"
-                    >Masukkan bukti yang anda miliki</span
-                  >
+                    >Masukkan bukti atau lampiran anda
+                  </span>
                   <img
                     src="../assets/icons/paperclip.svg"
                     alt="attachment"
